@@ -20,12 +20,12 @@ public class IntMultiSetApp implements IntMultiSet {
         System.arraycopy(occ, 0, new_occ,0, occ.length);
 
         set = new_set;
-        occ =new_occ;
+        occ = new_occ;
     }
 
     // Restituisce l'indice di elem relativo al vettore set.
     // Se elem non appartiene al multi-insieme restituisce 0.
-    private int getindexOf(int elem) {
+    protected int getindexOf(int elem) {
         for(int i=0; i<cur_pos; i++) {
             if(set[i] == elem) {
                 return i;
@@ -57,7 +57,7 @@ public class IntMultiSetApp implements IntMultiSet {
             while(b) {
                 try {
                     set[cur_pos] = elem;
-                    occ[cur_pos]++;
+                    occ[cur_pos] = 1;
                     cur_pos++;
                     b = false;
                 } catch (ArrayIndexOutOfBoundsException e) {
