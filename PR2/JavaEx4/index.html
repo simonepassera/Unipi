@@ -1,0 +1,137 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>Esercizio PR2</title>
+</head>
+<body bgcolor="#FFFFFF">
+<a NAME="0"></a>
+<center>
+<hr WIDTH="100%"></center>
+
+<center><table WIDTH="100%" NOSAVE >
+<tr NOSAVE>
+<td NOSAVE></td>
+
+<td NOSAVE>
+<center><b><font color="#660000"><font size=+2>Esercitazione PR2
+</font></font></b>
+  <br><b><font color="#660000"><font size=+2>Mercoled&igrave; 14 ottobre 2020</font></font></b></center>
+</td>
+
+<td NOSAVE>
+<div align=right><a href="#1"></a></div>
+
+
+</td>
+</tr>
+</table></center>
+
+<center>
+<hr WIDTH="100%"></center>
+
+<center><table COLS=1 WIDTH="100%" HEIGHT="600" NOSAVE >
+<tr VALIGN=TOP NOSAVE>
+<td NOSAVE>
+
+<center>
+<h1>
+<font size=+2>ISTRUZIONI E TESTI</font></h1></center>
+
+
+<ul>
+<li>
+<font size=+1>Si svolgano gli esercizi proposti in una nuova directory/progetto,
+ricordandosi di importare una classe adeguata per l'I/O da tastiera.
+</font></li>
+</font></li>
+</ul>
+<hr WIDTH="100%">
+<ul>
+<font size=+1>
+<b>[1]</b> 
+Si consideri il tipo di dati astratto modificabile
+<font color="blue"><b>SimpleSorteMap&lt;K,V&gt;</b></font>, variante semplificata dell'interfaccia <font color="blue"><b>SortedMap&lt;K,V&gt;</b></font> delle API Java 
+e utilizzata per rappresentare una funzione parziale con domino un ordine totale <font color="blue"><b>K</b></font> 
+e codominio <font color="blue"><b>V</b></font>. O, per dirla con le API Java: se una mappa &egrave;
+<em>an object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most 
+one value</em>, una mappa ordinata &egrave; <em> a Map that further provides a total ordering on its keys</em>.  
+<br>
+Tale tipo di dati ha, tra gli altri, i seguenti metodi
+<ul>
+<li>
+<font color="blue"><b>public V put(K key, V value)</b></font>,
+che associa il valore <font color="blue"><b>value</b></font>
+alla chiave <font color="blue"><b>key</b></font>, e restituisce 
+il valore precedentemente associato a <font color="blue"><b>key</b></font>
+se questo esisteva, e <font color="blue"><b>null</b></font> altrimenti;
+</li>
+<li>
+<font color="blue"><b>public V get(K key)</b></font>,
+che restituisce  il valore associato
+alla chiave <font color="blue"><b>key</b></font>
+se questo esiste, e <font color="blue"><b>null</b></font> altrimenti;
+</li>
+<li>
+<font color="blue"><b>public Set&lt;K&gt; keySet()</b></font>,
+che restituisce la chiave piu' grande che ha associato un valore.
+</li>
+<li>
+<font color="blue"><b>public &lt;K&gt; lastKey()</b></font>,
+</li>
+</ul>
+
+<br>
+Si completi la specifica del tipo di dati astratto, includendo una overview con la descrizione 
+di un'istanza tipica e fornendo la specifica completa dei metodi, comprese le eventuali eccezioni lanciate.
+
+<br><br>
+<b>Soluzione</b>: la classe <a href = "SimpleSortedMap.java">SimpleSortedMap&lt;K,V&gt;</a>.
+</font>
+</ul>
+<hr>
+<ul>
+<font size=+1><b>[2]</b> 
+Si definisca la classe <font color="blue"><b>public TwoListsSSMap&lt;K,V&gt;</b></font> che implementa 
+il tipo di dati astratto <font color="blue"><b>SimpleSortedMap&lt;K,V&gt;</b></font>.
+Questa deve utilizzare una rappresentazione del tipo
+
+<pre>
+   private List&lt;K&gt; keys;
+   private List&lt;V&gt; values;
+</pre>
+
+In particolare, si definiscano la funzione di astrazione e l'invariante di rappresentazione.
+
+<br><br>
+<b>Soluzione</b>: la classe <a href = "TwoListsSSMap.java">TwoListsSSMap&lt;K,V&gt;</a> e 
+alcune <a href = "proGet.pdf">varianti</a> di specifica/implementazione per il metodo 
+<font color="blue"><b>get</b></font>.
+</font>
+</ul>
+<hr>
+<ul>
+<font size=+1><b>[3]</b> 
+Si dimostri la correttezza dell'implementazione proposta. 
+</font>
+</ul>
+<hr>
+<ul>
+<font size=+1><b>[4]</b> 
+Si consideri la classe <font color="blue"><b>LimitedTwoListsSSMap&lt;K,V&gt;</b></font>, che
+estende <font color="blue"><b>TwoListSMap&lt;K,V&gt;</b></font> imponendo un limite massimo
+al numero di elementi di <font color="blue"><b>K</b></font> ai quali pu&ograve; essere associato 
+un valore. Si sovrascrivano solo i metodi necessari, e si definiscano la funzione di astrazione 
+e l'invariante di rappresentazione.  
+<br><br>
+.</font>
+
+<br><br>
+<b>Soluzione</b>: la classe <a href = "LimitedTwoListsSSMap.java">LimitedTwoListsSSMap&lt;K,V&gt;</a>.
+</ul>
+<hr WIDTH="100%">
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

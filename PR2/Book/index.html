@@ -1,0 +1,139 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; Linux 2.4.2-2 i686) [Netscape]">
+   <title>Esercitazione PR2</title>
+</head>
+<body bgcolor="#FFFFFF">
+<a NAME="0"></a>
+<center>
+<hr WIDTH="100%"></center>
+
+<center><table WIDTH="100%" NOSAVE >
+<tr NOSAVE>
+<td NOSAVE></td>
+
+<td NOSAVE>
+<center><b><font color="#660000"><font size=+2>Esercitazione PR2
+</font></font></b>
+<br><b><font color="#660000"><font size=+2>AA 20-21&igrave;</font></font></b></center>
+</td>
+
+<td NOSAVE>
+<div align=right><a href="#1"></a></div>
+</td>
+</tr>
+</table></center>
+
+<center>
+<hr WIDTH="100%"></center>
+
+<center><table COLS=1 WIDTH="100%" HEIGHT="600" NOSAVE >
+<tr VALIGN=TOP NOSAVE>
+<td NOSAVE>
+
+<center>
+<h1>
+<font size=+2>ISTRUZIONI E TESTI</font></h1></center>
+
+
+<ul>
+<li>
+<font size=+1>Svolgere gli esercizi proposti in una nuova directory/progetto. 
+Ricordarsi di importare una classe adeguata per l'I/O da tastiera.
+</font></li>
+<p>
+
+<li>
+<font size=+1>
+Verificare di aver installato correttamente il sistema Java, 
+compilando ed eseguendo (eventualmente con 
+<b><tt><font color="blue">javac</font></tt></b> e 
+<b><tt><font color="blue">java</font></tt></b>) 
+un semplice programma, 
+per esempio <a href = "Benvenuto.java">Benvenuto</a>.
+</font></li>
+</ul>
+
+<hr WIDTH="100%">
+
+<ul>
+<li> <font size=+1><b>[1]</b> 
+Il file <a href = "Book.java">Book.java</a>
+contiene  la definizione dell'interfaccia per descrivere un libro.
+Si definisca una classe java <font color="blue"><b>MyBook</b></font> che implementa l'interfaccia 
+<font color="blue"><b>Book</b></font>. 
+<!---
+La classe <font color="blue"><b>MyBook</b></font> deve offrire
+dei metodi opportuni per operare su un oggetto della classe.
+--->
+</font></li>
+<br>
+<font size=+1>Si corredi la classe degli ovvi metodi <b><tt><font
+color="blue">toString</font></tt></b> e <b><tt><font
+color="blue">equals</font></tt></b>, e la si testi utilizzando la classe 
+<a href = "TestBook.java">TestBook</a>.
+<br><br>
+<b>Soluzione</b>: La classe <a href = "MyBook.java">MyBook</a>
+</font>
+</ul>
+<hr>
+<ul>
+<li> <font size=+1><b>[2]</b> 
+Il file <a href = "Library.java">Library.java</a>
+contiene  la definizione dell'interfaccia per realizzare una biblioteca.
+Si definisca una classe java <font color="blue"><b>MyLibrary</b></font> che implementa l'interfaccia 
+<font color="blue"><b>Library</b></font>. 
+La classe <font color="blue"><b>MyLibrary</b></font> 
+<!--- deve offrire
+dei metodi opportuni per operare su un oggetto della classe e -->
+deve utilizzare 
+come struttura dati di supporto all'implementazione 
+<!-- un array di libri o-->
+una lista concatenata i cui nodi hanno la struttura (eventualmente estesa con opportuni metodi)
+ <pre>
+ public class BookNode {
+   private Book bk;
+   private BookNode next;
+ }
+</pre>
+</font></li>
+<font size=+1><!---In entrambi i casi, la classe ottenuta deve essere  testata-->
+Si testi la classe utilizzando la classe <a href = "TestLibrary.java">TestLibrary</a>.
+<br><br>
+<b>Soluzione</b>: La classe <a href = "MyLibrary.java">MyLibrary</a>
+</font>
+</ul>
+<hr>
+<ul>
+<li> <font size=+1><b>[3]</b> 
+Si definisca la classe <font color="blue"><b>MyIndexedBook</b></font> che
+estende la classe <font color="blue"><b>MyBook</b></font> e implementa 
+l'interfaccia <a href = "IndexedBook.java">IndexedBook</a> in modo che
+ogni libro contenga anche un codice identificativo e l'informazione relativa al
+genere (quale narrativa, guida di viaggio, etc.).
+</font></li>
+<br>
+<font size=+1>
+<b>Soluzione</b>: La classe <a href = "MyIndexedBook.java">MyIndexedBook</a>
+<font>
+</ul>
+<hr>
+<ul>
+<li> <font size=+1><b>[4]</b> 
+Si definisca la classe <font color="blue"><b>MyIndexedLibrary</b></font> che
+estende la classe <font color="blue"><b>MyLibrary</b></font> e implementa l'interfaccia 
+<a href = "IndexedLibrary.java">IndexedLibrary</a> in modo che 
+ad ogni volume che viene inserito sia associato un codice identificativo univoco.
+</font>
+</li>
+<br>
+<font size=+1>Si testi la classe utilizzando la classe <a href = "TestIndexedLibrary.java">TestIndexedLibrary</a>.
+<br><br>
+<b>Soluzione</b>: La classe <a href = "MyIndexedLibrary.java">MyIndexedLibrary</a>
+<font>
+</ul>
+<hr WIDTH="100%">
+</body>
+</html>
