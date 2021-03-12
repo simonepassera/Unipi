@@ -1,19 +1,19 @@
 .PHONY: clean cleanall
 
-a.out: libtokenizer.so tokenizer.h main.o
-	gcc main.o -L /home/simo/lib -ltokenizer
+main: main.o libtokenizer.so
+	gcc main.o -o main -L /home/simo/lib -ltokenizer
 
-main.o: main.c
-	gcc -c -I ./ main.c
+main.o: main.c tokenizer.h
+	gcc main.c -c -I ./
 
 libtokenizer.so: tokenizer.o
 	gcc -shared tokenizer.o -o /home/simo/lib/libtokenizer.so
 
-tokenizer.o: tokenizer.c
+tokenizer.o: tokenizer.c tokenizer.h
 	gcc -fPIC -I ./ -c tokenizer.c
 
 clean:
-	rm -f a.out
+	rm -f main
 
 cleanall: clean
-	rm -f main.o libtokenizer.so tokenizer.o
+	rm -f main.o tokenizer.o

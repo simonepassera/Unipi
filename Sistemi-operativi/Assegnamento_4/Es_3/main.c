@@ -1,8 +1,10 @@
-#include <stdio.h>
+#define _XOPEN_SOURCE // getopt()
+
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
-#include <unistd.h>
 #include <ctype.h>
+#include <unistd.h>
 
 #define DEFAULT_MAX_LINE 2048
 
@@ -19,12 +21,12 @@ int wcount(const char *p)
 			if(!isspace(*(p-1)) && !iscntrl(*(p-1)))
 			{
 				count++;
-				flag=0;
+				flag = 0;
     		}
 		}
 		else
 		{
-			flag=1;
+			flag = 1;
 		}
 
 		p++;
@@ -42,7 +44,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, " -w conta il numero di parole\n");
 		fprintf(stderr, " -m <num> setta la lunghezza massima di una linea a <num>\n");
 
-		exit(EXIT_FAILURE);
+		return EXIT_FAILURE;
    	}
 
 	int countline = 0, countword = 0;
@@ -50,7 +52,7 @@ int main(int argc, char *argv[])
    	long max_line = DEFAULT_MAX_LINE;
 	char *endptr;
 
-	while((opt=getopt(argc, argv, "lwm:")) != -1)
+	while((opt = getopt(argc, argv, "lwm:")) != -1)
 	{
 		switch(opt)
 		{
@@ -67,20 +69,20 @@ int main(int argc, char *argv[])
 				{
 					fprintf(stderr, "%s: option requires an argument -- 'm'\n", argv[0]);
 					fprintf(stderr, "Usage: %s [-l -w -m <num> ] <filename> [<filename> ...]\n", argv[0]);
-					exit(EXIT_FAILURE);
+					return EXIT_FAILURE;
 				}
 
 				break;
 			default:
 				fprintf(stderr, "Usage: %s [-l -w -m <num> ] <filename> [<filename> ...]\n", argv[0]);
-				exit(EXIT_FAILURE);
+				return EXIT_FAILURE;
 		}
    	}
 
 	if(optind == argc)
 	{
 		fprintf(stderr, "Usage: %s [-l -w -m <num> ] <filename> [<filename> ...]\n", argv[0]);
-        exit(EXIT_FAILURE);
+        return EXIT_FAILURE;
 	}
 
 	if(countword+countline == 0)
@@ -94,7 +96,7 @@ int main(int argc, char *argv[])
 	if(line == NULL)
 	{
 		perror("malloc");
-		exit(EXIT_FAILURE);
+		return EXIT_FAILURE;
     }
 
 	while(argv[optind] != NULL)
@@ -107,7 +109,7 @@ int main(int argc, char *argv[])
 		if ((f=fopen(filename, "r")) == NULL)
 		{
 			perror(filename);
-	   		exit(EXIT_FAILURE);
+	   		return EXIT_FAILURE;
 		}
 
 		numline=0;

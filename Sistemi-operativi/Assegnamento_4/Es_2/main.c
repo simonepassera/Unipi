@@ -6,7 +6,7 @@
 
 #define CHECK_EQ(X, val, str)		\
 									\
-	if((X)==val)					\
+	if((X) == val)					\
 	{								\
 		perror(str);				\
       	exit(EXIT_FAILURE);			\
@@ -14,7 +14,7 @@
 
 #define CHECK_NEQ(X, val, str)		\
 									\
-    	if((X)!=val)				\
+    	if((X) != val)				\
 		{							\
       		perror(str);			\
       		exit(EXIT_FAILURE);		\
@@ -24,7 +24,7 @@ typedef int (*F_t)(const void*, const void*, size_t);
 
 int confronta(F_t cmp, const void *s1, const void *s2, size_t n)
 {
-	return cmp(s1,s2,n);
+	return cmp(s1, s2, n);
 }
 
 int main(int argc, char *argv[])
@@ -43,39 +43,39 @@ int main(int argc, char *argv[])
 		return EXIT_FAILURE;
     }
 
-    int crea = (strncmp("create", argv[2], strlen("create")) == 0);
+    int create = (strncmp("create", argv[2], strlen("create")) == 0);
 
-    if(crea)
+    if(create)
 	{
 		float *mat = NULL;
 
-		CHECK_EQ(mat=(float*)malloc(dim*dim*sizeof(float)), NULL, "malloc");
+		CHECK_EQ(mat = malloc(dim * dim * sizeof(float)), NULL, "malloc");
 
-		for(long i=0; i<dim; i++)
+		for(long i = 0; i < dim; i++)
 	   	{
-			for(long j=0; j<dim; j++)
+			for(long j = 0; j < dim; j++)
 			{
-				mat[i*dim + j]=(i+j)/2.0;
+				mat[i*dim + j] = (i+j)/2.0;
 			}
 		}
 
 		FILE *fp1;
 		CHECK_EQ(fp1 = fopen("mat_dump.dat", "w"), NULL, "fopen mat_dump.dat");
 
-		CHECK_NEQ(fwrite(mat, sizeof(float), dim*dim, fp1), (dim*dim), "fwrite");
+		CHECK_NEQ(fwrite(mat, sizeof(float), dim * dim, fp1), (dim * dim), "fwrite");
 
 		fclose(fp1);
 
 		CHECK_EQ(fp1 = fopen("mat_dump.txt", "w"), NULL, "fopen mat_dump.txt");
 
-		for(long i=0; i<dim; i++)
+		for(long i = 0; i < dim; i++)
 		{
-			for(long j=0; j<dim; j++)
+			for(long j = 0; j < dim; j++)
 			{
-				if(fprintf(fp1, "%f\n", mat[i*dim+j])<0)
+				if(fprintf(fp1, "%f\n", mat[i*dim + j]) < 0)
 				{
 					perror("fprintf");
-					exit(EXIT_FAILURE);
+					return EXIT_FAILURE;
 				}
 	    	}
 		}
@@ -86,38 +86,38 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		float *mat=NULL;
-		CHECK_EQ(mat=(float*)malloc(dim*dim*sizeof(float)), NULL, "malloc");
+		float *mat = NULL;
+		CHECK_EQ(mat = malloc(dim * dim * sizeof(float)), NULL, "malloc");
 
 		float *mat2=NULL;
-		CHECK_EQ(mat2=(float*)malloc(dim*dim*sizeof(float)), NULL, "malloc");
+		CHECK_EQ(mat2 = malloc(dim * dim * sizeof(float)), NULL, "malloc");
 
 		FILE *fp1;
-		CHECK_EQ(fp1=fopen("mat_dump.dat", "r"), NULL, "fopen mat_dump.dat");
+		CHECK_EQ(fp1 = fopen("mat_dump.dat", "r"), NULL, "fopen mat_dump.dat");
 
 		FILE *fp2;
-		CHECK_EQ(fp2=fopen("mat_dump.txt", "r"), NULL, "fopen max_dump.txt");
+		CHECK_EQ(fp2 = fopen("mat_dump.txt", "r"), NULL, "fopen max_dump.txt");
 
 		char buf[128];
 
-		for(long i=0; i<dim; i++)
+		for(long i = 0; i < dim; i++)
     	{
-			for(long j=0; j<dim; j++)
+			for(long j = 0; j < dim; j++)
 			{
 				CHECK_EQ(fgets(buf, 128, fp2), NULL, "fgets");
 
-				buf[strlen(buf)-1]='\0';
-				mat[i*dim+j]=strtof(buf, NULL);
+				buf[strlen(buf) - 1] = '\0';
+				mat[i*dim + j] = strtof(buf, NULL);
 			}
 		}
 
 		fclose(fp2);
 
-		CHECK_NEQ(fread(mat2, sizeof(float), dim*dim, fp1), (dim*dim), "fread");
+		CHECK_NEQ(fread(mat2, sizeof(float), dim * dim, fp1), (dim * dim), "fread");
 
 		fclose(fp1);
 
-		if(confronta(memcmp, mat, mat2, dim*dim*sizeof(float)) != 0)
+		if(confronta(memcmp, mat, mat2, dim * dim * sizeof(float)) != 0)
 		{
 			free(mat);
 			free(mat2);

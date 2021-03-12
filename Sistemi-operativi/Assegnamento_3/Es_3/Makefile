@@ -1,6 +1,6 @@
 .PHONY: clean
 
-a.out: main.c
-	gcc main.c
+main: main.c
+	gcc main.c -o main
 clean:
-	rm -f a.out
+	rm -f main

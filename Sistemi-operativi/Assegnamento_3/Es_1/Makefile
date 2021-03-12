@@ -1,7 +1,7 @@
 .PHONY: clean cleanall
 
-a.out: main.o libtokenizer.a
-	gcc main.o -L ./ -ltokenizer
+main: main.o libtokenizer.a
+	gcc main.o -o main -L ./ -ltokenizer
 
 main.o: main.c tokenizer.h
 	gcc -c main.c -I ./
@@ -9,11 +9,11 @@ main.o: main.c tokenizer.h
 libtokenizer.a: tokenizer.o
 	ar rsv libtokenizer.a tokenizer.o
 
-tokenizer.o: tokenizer.c
-	gcc -c tokenizer.c
+tokenizer.o: tokenizer.c tokenizer.h
+	gcc tokenizer.c -c -I ./
 
 clean:
-	rm -f a.out
+	rm -f main
 
 cleanall: clean
 	rm -f main.o libtokenizer.a tokenizer.o

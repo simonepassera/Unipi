@@ -1,6 +1,6 @@
 .PHONY: clean
 
-a.out: main.c
-	gcc -DINIT_VALUE=4 main.c
+main: main.c
+	gcc main.c -o main  -DINIT_VALUE=4
 clean:
-	rm -f a.out
+	rm -f main

@@ -1,9 +1,14 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
 #define PASSWD_FILE "/etc/passwd"
 #define MAX_LEN 1024
+#define ERROR \
+	if(fd != NULL) fclose(fd); \
+    if(fout != NULL) fclose(fout); \
+    if(buffer != NULL) free(buffer); \
+	return EXIT_FAILURE;
 
 int main(int argc, char *argv[])
 {
@@ -13,43 +18,43 @@ int main(int argc, char *argv[])
 		return EXIT_FAILURE;
     }
 
-	FILE *fd=NULL;
-	FILE *fout=NULL;
+	FILE *fd = NULL;
+	FILE *fout = NULL;
 
-	char *buffer= NULL;
+	char *buffer = NULL;
 
-    if((fd=fopen(PASSWD_FILE, "r")) == NULL)
+    if((fd = fopen(PASSWD_FILE, "r")) == NULL)
 	{
 		perror("Opening password file");
-		goto error;
+		ERROR
     }
 
-    if((fout=fopen(argv[1], "w")) == NULL)
+    if((fout = fopen(argv[1], "w")) == NULL)
 	{
 		perror("Opening output file");
-		goto error;
+		ERROR
     }
 
- 	if((buffer = malloc(MAX_LEN*sizeof(char))) == NULL)
+ 	if((buffer = malloc(MAX_LEN * sizeof(char))) == NULL)
 	{
 		perror("Malloc buffer");
-		goto error;
+		ERROR
 	}
 
 	char *c;
 
     while(fgets(buffer, MAX_LEN, fd) != NULL)
 	{
-		if((c=strchr(buffer, '\n')) == NULL)
+		if((c = strchr(buffer, '\n')) == NULL)
 		{
 			fprintf(stderr, "Something went wrong, please consider to increase MAX_LEN (%d)\n", MAX_LEN);
-	   		goto error;
+	   		ERROR
 		}
 
-		if((c=strchr(buffer, ':')) == NULL)
+		if((c = strchr(buffer, ':')) == NULL)
 		{
 			fprintf(stderr, "Wrong file format\n");
-	   		goto error;
+	   		ERROR
 		}
 
 		*c='\0';
@@ -62,12 +67,4 @@ int main(int argc, char *argv[])
     free(buffer);
 
     return EXIT_SUCCESS;
-
-	error:
-	
-	if(fd != NULL) fclose(fd);
-    if(fout != NULL) fclose(fout);
-    if(buffer != NULL) free(buffer);
-
-	exit(EXIT_FAILURE);
 }
