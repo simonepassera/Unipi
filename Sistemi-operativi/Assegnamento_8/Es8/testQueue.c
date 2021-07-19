@@ -19,16 +19,16 @@ typedef struct threadArgs {
 // funzione eseguita dal thread produttore
 void *Producer(void *arg)
 {
-    Queue_t *q  = ((threadArgs_t*)arg)->q;
-    int   myid  = ((threadArgs_t*)arg)->thid;
-    int   start = ((threadArgs_t*)arg)->start;
-    int   stop  = ((threadArgs_t*)arg)->stop;
+    Queue_t *q = ((threadArgs_t*)arg)->q;
+    int myid = ((threadArgs_t*)arg)->thid;
+    int start = ((threadArgs_t*)arg)->start;
+    int stop = ((threadArgs_t*)arg)->stop;
 
-    for(int i=start;i<stop; ++i)
+    for(int i=start; i<stop; ++i)
     {
 		int *data = malloc(sizeof(int));
 
-		if (data == NULL)
+		if(data == NULL)
 		{
 		    perror("Producer malloc");
 		    pthread_exit(NULL);
@@ -36,7 +36,8 @@ void *Producer(void *arg)
 
 		*data = i;
 
-		if (push(q, data) == -1) {
+		if(push(q, data) == -1)
+		{
 		    fprintf(stderr, "Errore: push\n");
 		    pthread_exit(NULL);
 		}
@@ -45,6 +46,7 @@ void *Producer(void *arg)
     }
     
     printf("Producer%d exits\n", myid);
+
     return NULL;
 }
 
@@ -54,7 +56,7 @@ void *Consumer(void *arg)
     Queue_t *q = ((threadArgs_t*)arg)->q;
     int myid = ((threadArgs_t*)arg)->thid;
 
-    size_t consumed=0;
+    size_t consumed = 0;
 
     while(1)
     {
@@ -70,23 +72,25 @@ void *Consumer(void *arg)
 
 		++consumed;
 		printf("Consumer %d: estratto <%d>\n", myid, *data);
+
 		free(data);
     }
 
-    printf("Consumer %d, consumed <%ld> messages, now it exits\n",myid,consumed);
+    printf("Consumer %d, consumed <%ld> messages, now it exits\n", myid, consumed);
+
     return NULL;
 }
 
 void usage(char *pname)
 {
-    fprintf(stderr, "\nusa: %s -p <num-producers> -c <num-consumers> -n <num-messages>\n\n", pname);
+    fprintf(stderr, "Use: %s -p <num-producers> -c <num-consumers> -n <num-messages>\n\n", pname);
     exit(EXIT_FAILURE);
 }
 
 int main(int argc, char *argv[])
 { 
     extern char *optarg;
-    int p=0,c=0, n=0, opt;
+    int p=0, c=0, n=0, opt;
     
     // parsing degli argomenti
     while((opt = getopt(argc, argv, "p:c:n:")) != -1)
@@ -108,7 +112,9 @@ int main(int argc, char *argv[])
 		}
     }
     
-    if(p==0 || c==0 || n==0) 	usage(argv[0]);
+    if(p==0 || c==0 || n==0)
+    	usage(argv[0]);
+
     printf("num producers =%d, num consumers =%d\n", p, c);
     
     pthread_t *th;
@@ -137,21 +143,22 @@ int main(int argc, char *argv[])
     for(int i=0; i<p; ++i)
     {	
 		thARGS[i].thid = i;
-		thARGS[i].q    = q;
+		thARGS[i].q = q;
 		thARGS[i].start= start;
-		thARGS[i].stop = start+chunk + ((i<r)?1:0);
+		thARGS[i].stop = start + chunk + ((i<r) ? 1 : 0);
+
 		start = thARGS[i].stop;	
     }
     
-    for(int i=p;i<(p+c); ++i)
+    for(int i=p; i<(p+c); ++i)
     {	
 		thARGS[i].thid = i-p;
-		thARGS[i].q    = q;
-		thARGS[i].start= 0;
+		thARGS[i].q = q;
+		thARGS[i].start = 0;
 		thARGS[i].stop = 0;
     }
         
-    for(int i=0;i<c; ++i)
+    for(int i=0; i<c; ++i)
 	{
 		if(pthread_create(&th[p+i], NULL, Consumer, &thARGS[p+i]) != 0)
 		{
@@ -174,11 +181,13 @@ int main(int argc, char *argv[])
      * quindi si inviano 'c' valori speciali (-1)
      * quindi si aspettano i consumatori
      */
+
     // aspetto prima tutti i produttori
-    for(int i=0;i<p; ++i)
+    for(int i=0; i<p; ++i)
 		pthread_join(th[i], NULL);
+
     // quindi termino tutti i consumatori
-    for(int i=0;i<c; ++i)
+    for(int i=0; i<c; ++i)
     {
 		int *eos = malloc(sizeof(int));
 		*eos = -1;
@@ -186,7 +195,7 @@ int main(int argc, char *argv[])
     }
     
     // aspetto la terminazione di tutti i consumatori
-    for(int i=0;i<c; ++i)
+    for(int i=0; i<c; ++i)
 		pthread_join(th[p+i], NULL);
 
     // libero memoria

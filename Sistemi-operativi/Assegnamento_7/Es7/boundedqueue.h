@@ -7,14 +7,14 @@
  *
  */
 typedef struct BQueue {
-    void   **buf;
+    void **buf;
     size_t   head;
     size_t   tail;
     size_t   qsize;
     size_t   qlen;
     pthread_mutex_t  m;
-    pthread_cond_t   cfull;
-    pthread_cond_t   cempty;
+    pthread_cond_t cfull;
+    pthread_cond_t cempty;
 } BQueue_t;
 
 
@@ -24,7 +24,7 @@ typedef struct BQueue {
  *   \retval NULL se si sono verificati problemi nell'allocazione (errno settato)
  *   \retval q puntatore alla coda allocata
  */
-BQueue_t *initBQueue(size_t n);
+BQueue_t* initBQueue(size_t n);
 
 /** Cancella una coda allocata con initQueue. Deve essere chiamata da
  *  da un solo thread (tipicamente il thread main).
@@ -39,7 +39,7 @@ void deleteBQueue(BQueue_t *q, void (*F)(void*));
  *   \retval 0 se successo
  *   \retval -1 se errore (errno settato opportunamente)
  */
-int    push(BQueue_t *q, void *data);
+int push(BQueue_t *q, void *data);
 
 /** Estrae un dato dalla coda.
  *

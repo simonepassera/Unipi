@@ -5,13 +5,12 @@ ARFLAGS = rvs
 INCLUDES = -I. -I./utils/includes
 LDFLAGS = -L.
 OPTFLAGS = -g -O3 
-LIBS = -lpthread
+LIBS = -lpthread -lQueue
 
 # aggiungere qui altri targets
 TARGETS	= pipedec       \
 		  testQueue     \
 		  mybc
-
 
 .PHONY: all clean cleanall
 
@@ -26,7 +25,7 @@ all: $(TARGETS)
 pipedec: dec
 
 testQueue: testQueue.o libQueue.a
-	$(CC) $(CCFLAGS) $(INCLUDES) $(OPTFLAGS) $(LDFLAGS) -o $@ $^ $(LIBS)
+	$(CC) $(CCFLAGS) $(INCLUDES) $(OPTFLAGS) $(LDFLAGS) -o $@ $< $(LIBS)
 
 libQueue.a: queue.o queue.h
 	$(AR) $(ARFLAGS) $@ $<

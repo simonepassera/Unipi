@@ -6,18 +6,19 @@
 /** Elemento della coda.
  *
  */
-typedef struct Node {
-    void        * data;
-    struct Node * next;
+typedef struct Node
+{
+    void *data;
+    struct Node *next;
 } Node_t;
 
 /** Struttura dati coda.
  *
  */
 typedef struct Queue {
-    Node_t        *head;    // elemento di testa
-    Node_t        *tail;    // elemento di coda 
-    unsigned long  qlen;    // lunghezza 
+    Node_t *head; // elemento di testa
+    Node_t *tail; // elemento di coda 
+    unsigned long  qlen; // lunghezza 
     pthread_mutex_t qlock;
     pthread_cond_t  qcond;
 } Queue_t;
@@ -44,13 +45,13 @@ void deleteQueue(Queue_t *q);
  *   \retval 0 se successo
  *   \retval -1 se errore (errno settato opportunamente)
  */
-int    push(Queue_t *q, void *data);
+int push(Queue_t *q, void *data);
 
 /** Estrae un dato dalla coda.
  *
  *  \retval data puntatore al dato estratto.
  */
-void  *pop(Queue_t *q);
+void* pop(Queue_t *q);
 
 /** Ritorna la lunghezza attuale della coda passata come parametro.
  */

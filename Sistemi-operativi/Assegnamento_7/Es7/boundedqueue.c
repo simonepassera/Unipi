@@ -28,9 +28,9 @@ static inline void SignalConsumer(BQueue_t *q)     { SIGNAL(&q->cempty); }
 
 /* ------------------- interfaccia della coda ------------------ */
 
-BQueue_t *initBQueue(size_t n)
+BQueue_t* initBQueue(size_t n)
 {
-    BQueue_t *q = (BQueue_t*)calloc(sizeof(BQueue_t), 1);
+    BQueue_t *q = (BQueue_t*)calloc(1, sizeof(BQueue_t));
 
     if(!q)
     {
@@ -38,7 +38,7 @@ BQueue_t *initBQueue(size_t n)
     	return NULL;
     }
     
-    q->buf = calloc(sizeof(void*), n);
+    q->buf = calloc(n, sizeof(void*));
 
     if(!q->buf)
     {
@@ -46,19 +46,19 @@ BQueue_t *initBQueue(size_t n)
 		goto error;
     }
     
-    if(pthread_mutex_init(&q->m,NULL) != 0)
+    if(pthread_mutex_init(&q->m, NULL) != 0)
     {
 		perror("pthread_mutex_init");
 		goto error;
     }
     
-    if(pthread_cond_init(&q->cfull,NULL) != 0)
+    if(pthread_cond_init(&q->cfull, NULL) != 0)
     {
 		perror("pthread_cond_init full");
 		goto error;
     }
     
-    if(pthread_cond_init(&q->cempty,NULL) != 0)
+    if(pthread_cond_init(&q->cempty, NULL) != 0)
     {
 		perror("pthread_cond_init empty");
 		goto error;
