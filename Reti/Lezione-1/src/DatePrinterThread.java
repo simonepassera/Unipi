@@ -4,11 +4,15 @@ public class DatePrinterThread extends Thread
 {
     public static void main(String[] args)
     {
-        DatePrinterThread dataPrinterTh = new DatePrinterThread();
+        DatePrinterThread dataPrinterTh = new DatePrinterThread("New thread");
         // manda in esecuzione il thread
         dataPrinterTh.start();
         // stampa il nome del thread corrente
         System.out.println(Thread.currentThread().getName());
+    }
+
+    public DatePrinterThread(String s) {
+        super(s);
     }
 
     @Override
