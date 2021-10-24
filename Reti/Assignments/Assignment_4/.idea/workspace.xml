@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e73ad0b6-d684-4cdf-b0f6-17a1e81aacdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Lezioni/Lezione_4/src/DropboxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment_3/out/production/Assignment_3/Laboratorio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment_3/out/production/Assignment_3/Utente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e73ad0b6-d684-4cdf-b0f6-17a1e81aacdc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
