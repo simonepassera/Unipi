@@ -5,9 +5,17 @@ import java.util.StringTokenizer;
 
 public class Server {
     public static int PORT = 6789;
-    public static String BASE_PATH = "/home/simo/Git/Unipi/Reti/Assignments/Assignment_6/src/html/";
+    public static String BASE_PATH;
 
     public static void main(String[] args) {
+        if(args.length != 1) {
+            System.out.println("Usage: java Server <base_path>");
+            System.exit(1);
+        }
+        else {
+            BASE_PATH = args[0];
+        }
+
         try (ServerSocket server = new ServerSocket(PORT)) {
             System.out.println("Server is running ...");
             System.out.println("HTTP GET requests -> http://localhost:6789/");
