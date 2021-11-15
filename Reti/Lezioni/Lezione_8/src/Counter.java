@@ -51,8 +51,8 @@ public class Counter {
 				buf.clear();
 			}
 			// Stampo le frequenze su schermo e sul file di output.
-			for (var e : freq.entrySet()) {
-				String line = e.getKey() + "\t" + e.getValue() + "\r\n";
+			for (Map.Entry<Character, Integer> e : freq.entrySet()) {
+				String line = e.getKey() + "\t" + e.getValue() + "\n";
     			System.out.print(line);
 				// Preparo il buffer per la scrittura.
 				buf.clear();

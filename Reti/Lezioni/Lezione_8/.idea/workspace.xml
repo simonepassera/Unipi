@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37eec938-52dd-4e2c-b843-afdbe7d7e884" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Assignments/Assignment_8/Assignment_8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Assignments/Assignment_8/src/Banca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lezione_8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignments/Assignment_8/src/ContoCorrente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assignments/Assignment_8/src/Scan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignments/Assignment_8/out/production/Assignment_8/Banca.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/Assignment_8/out/production/Assignment_8/Banca.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignments/Assignment_8/src/Banca.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/Assignment_8/src/Banca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lezione_8/Counter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lezione_8/Counter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Counter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
