@@ -1,3 +1,5 @@
+// @Author Simone Passera
+
 import com.google.gson.*;
 import com.google.gson.stream.JsonReader;
 
@@ -46,7 +48,7 @@ public class Banca {
             origin.add(Calendar.YEAR, -2);
 
             // Alloco un buffer avente la dimensione fissata
-            ByteBuffer buf = ByteBuffer.allocate(bufSize);
+            ByteBuffer buf = ByteBuffer.allocateDirect(bufSize);
 
             // Scrivo sul file "["
             buf.clear();
