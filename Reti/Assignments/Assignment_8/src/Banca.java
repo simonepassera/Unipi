@@ -6,6 +6,7 @@ import java.nio.*;
 import java.nio.channels.FileChannel;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Banca {
     private static final String fileJson = "banca.json";
@@ -39,25 +40,30 @@ public class Banca {
             ContoCorrente cc;
             ContoCorrente.Causale[] causali = ContoCorrente.Causale.values();
 
+            // Creo due date (quella di oggi e di due anni fa) per generare date random tra le due
             Calendar bound = Calendar.getInstance();
             Calendar origin = Calendar.getInstance();
             origin.add(Calendar.YEAR, -2);
 
-            // Alloco un buffer avente la dimensione fissata.
+            // Alloco un buffer avente la dimensione fissata
             ByteBuffer buf = ByteBuffer.allocate(bufSize);
 
+            // Scrivo sul file "["
             buf.clear();
             buf.put("[\n".getBytes());
             buf.flip();
             while (buf.hasRemaining()) ch.write(buf);
 
             for (int i = 0; i < numContiCorrente; i++) {
-                cc = new ContoCorrente("User-test-" + (i+1));
+                // Creo un conto corrente
+                cc = new ContoCorrente("Utente-test-" + (i+1));
 
+                // Aggiungo al massimo "numMaxMovimenti" al conto corrente, con data, valuta e causale random
                 for (int j = 0; j < (ThreadLocalRandom.current().nextInt(numMaxMovimenti) + 1); j++) {
                     cc.add(new Date(ThreadLocalRandom.current().nextLong(origin.getTimeInMillis(), bound.getTimeInMillis())), causali[ThreadLocalRandom.current().nextInt(causali.length)], ThreadLocalRandom.current().nextInt(1000));
                 }
 
+                // Serializzo il conto corrente in json e lo scrivo sul file
                 buf.clear();
                 buf.put(gson.toJson(cc).getBytes());
                 if(i != (numContiCorrente - 1)) buf.put(",\n".getBytes());
@@ -66,6 +72,7 @@ public class Banca {
                 while (buf.hasRemaining()) ch.write(buf);
             }
 
+            // Scrivo sul file "]"
             buf.clear();
             buf.put("\n]".getBytes());
             buf.flip();
@@ -80,6 +87,13 @@ public class Banca {
 
         ExecutorService pool = Executors.newFixedThreadPool(10);
 
+        // Array che contiene i contatori globali del numero totale delle causali
+        AtomicInteger[] counter = new AtomicInteger[ContoCorrente.Causale.values().length];
+
+        // Inizializzo i contatori a 0
+        for (int i = 0; i < counter.length; i++) {
+            counter[i] = new AtomicInteger();
+        }
 
         try (
                 FileInputStream inFile = new FileInputStream(fileJson)
@@ -88,8 +102,9 @@ public class Banca {
 
             reader.beginArray();
 
+            // Deserializzo il conto corrente json e passo l'oggetto al pool di thread
             while (reader.hasNext()) {
-                pool.execute(new Scan(gson.fromJson(reader, ContoCorrente.class)));
+                pool.execute(new Scan(gson.fromJson(reader, ContoCorrente.class), counter));
             }
 
             reader.endArray();
@@ -111,7 +126,10 @@ public class Banca {
             pool.shutdownNow();
         }
 
-        // TODO
+        System.out.println("Numero totale di movimenti per ogni causale:\n");
 
+        for (ContoCorrente.Causale c : ContoCorrente.Causale.values()) {
+            System.out.println(c.name() + ": " + counter[c.ordinal()]);
+        }
     }
 }
