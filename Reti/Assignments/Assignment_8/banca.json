@@ -3,29 +3,69 @@
   "nome": "Utente-test-1",
   "movimenti": [
     {
-      "valuta": 163,
-      "causale": "PAGOBANCOMAT",
-      "data": "May 7, 2021, 12:49:06 AM"
-    },
-    {
-      "valuta": 311,
-      "causale": "ACCREDITO",
-      "data": "Jan 17, 2020, 6:05:59 AM"
-    },
-    {
-      "valuta": 948,
-      "causale": "PAGOBANCOMAT",
-      "data": "Sep 14, 2021, 9:59:46 AM"
-    },
-    {
-      "valuta": 272,
+      "valuta": 451,
       "causale": "F24",
-      "data": "Apr 25, 2021, 3:06:21 AM"
+      "data": "May 30, 2020, 11:19:08 PM"
     },
     {
-      "valuta": 787,
+      "valuta": 332,
+      "causale": "PAGOBANCOMAT",
+      "data": "Jul 31, 2020, 5:49:28 PM"
+    },
+    {
+      "valuta": 501,
+      "causale": "F24",
+      "data": "Oct 5, 2021, 12:15:46 PM"
+    },
+    {
+      "valuta": 4,
       "causale": "ACCREDITO",
-      "data": "Jun 26, 2020, 4:25:51 AM"
+      "data": "Sep 5, 2021, 2:38:58 PM"
+    },
+    {
+      "valuta": 214,
+      "causale": "BOLLETTINO",
+      "data": "Jul 14, 2021, 11:50:01 AM"
+    },
+    {
+      "valuta": 201,
+      "causale": "PAGOBANCOMAT",
+      "data": "Apr 23, 2020, 2:23:22 AM"
+    },
+    {
+      "valuta": 165,
+      "causale": "BOLLETTINO",
+      "data": "Mar 7, 2021, 10:12:46 PM"
+    },
+    {
+      "valuta": 156,
+      "causale": "ACCREDITO",
+      "data": "Dec 13, 2020, 6:26:04 AM"
+    },
+    {
+      "valuta": 534,
+      "causale": "BONIFICO",
+      "data": "Jan 15, 2021, 4:59:41 PM"
+    },
+    {
+      "valuta": 538,
+      "causale": "F24",
+      "data": "Jun 20, 2020, 4:18:07 PM"
+    },
+    {
+      "valuta": 9,
+      "causale": "BOLLETTINO",
+      "data": "Jul 18, 2021, 1:45:52 PM"
+    },
+    {
+      "valuta": 584,
+      "causale": "BOLLETTINO",
+      "data": "Jul 6, 2021, 12:03:10 AM"
+    },
+    {
+      "valuta": 73,
+      "causale": "ACCREDITO",
+      "data": "Jun 28, 2021, 9:13:48 AM"
     }
   ]
 },
@@ -33,109 +73,79 @@
   "nome": "Utente-test-2",
   "movimenti": [
     {
-      "valuta": 628,
-      "causale": "BOLLETTINO",
-      "data": "Feb 7, 2020, 1:33:59 AM"
-    },
-    {
-      "valuta": 254,
-      "causale": "PAGOBANCOMAT",
-      "data": "Nov 11, 2020, 1:59:11 PM"
-    },
-    {
-      "valuta": 883,
-      "causale": "BOLLETTINO",
-      "data": "Sep 28, 2020, 12:30:03 AM"
-    },
-    {
-      "valuta": 364,
-      "causale": "BOLLETTINO",
-      "data": "Aug 25, 2020, 10:03:20 PM"
-    },
-    {
-      "valuta": 403,
+      "valuta": 171,
       "causale": "BONIFICO",
-      "data": "Mar 31, 2020, 7:40:01 AM"
+      "data": "Jan 7, 2021, 11:41:39 AM"
     },
     {
-      "valuta": 361,
-      "causale": "BOLLETTINO",
-      "data": "Aug 16, 2021, 9:02:25 PM"
-    },
-    {
-      "valuta": 64,
-      "causale": "BOLLETTINO",
-      "data": "Jan 3, 2021, 9:52:20 PM"
-    },
-    {
-      "valuta": 743,
-      "causale": "F24",
-      "data": "Dec 31, 2020, 5:51:51 PM"
-    },
-    {
-      "valuta": 70,
-      "causale": "F24",
-      "data": "Apr 14, 2021, 9:07:53 AM"
-    },
-    {
-      "valuta": 872,
-      "causale": "PAGOBANCOMAT",
-      "data": "Aug 20, 2020, 11:28:24 AM"
-    },
-    {
-      "valuta": 128,
-      "causale": "ACCREDITO",
-      "data": "Sep 4, 2020, 10:04:39 AM"
-    },
-    {
-      "valuta": 979,
+      "valuta": 86,
       "causale": "BONIFICO",
-      "data": "Dec 22, 2019, 1:43:01 PM"
+      "data": "Dec 4, 2019, 7:55:46 PM"
     },
     {
-      "valuta": 274,
+      "valuta": 234,
+      "causale": "PAGOBANCOMAT",
+      "data": "Jun 4, 2020, 12:58:03 AM"
+    },
+    {
+      "valuta": 633,
+      "causale": "PAGOBANCOMAT",
+      "data": "Jun 2, 2021, 3:59:29 PM"
+    },
+    {
+      "valuta": 966,
       "causale": "F24",
-      "data": "Jan 26, 2021, 5:52:31 PM"
+      "data": "Oct 22, 2021, 7:41:20 PM"
     },
     {
-      "valuta": 728,
-      "causale": "ACCREDITO",
-      "data": "Oct 3, 2021, 7:27:01 PM"
+      "valuta": 850,
+      "causale": "F24",
+      "data": "Jun 6, 2020, 7:09:20 PM"
     },
     {
       "valuta": 161,
-      "causale": "BONIFICO",
-      "data": "Aug 30, 2020, 5:39:14 AM"
-    },
-    {
-      "valuta": 165,
-      "causale": "PAGOBANCOMAT",
-      "data": "Sep 16, 2020, 1:14:10 AM"
-    },
-    {
-      "valuta": 493,
       "causale": "F24",
-      "data": "Dec 10, 2020, 4:41:57 AM"
+      "data": "Nov 5, 2020, 9:23:41 AM"
     },
     {
-      "valuta": 523,
-      "causale": "ACCREDITO",
-      "data": "Mar 5, 2021, 10:48:50 PM"
+      "valuta": 478,
+      "causale": "F24",
+      "data": "May 5, 2020, 11:53:57 AM"
     },
     {
-      "valuta": 137,
-      "causale": "ACCREDITO",
-      "data": "Jul 21, 2020, 2:56:15 PM"
-    },
-    {
-      "valuta": 259,
-      "causale": "BOLLETTINO",
-      "data": "Jun 20, 2020, 3:28:10 AM"
-    },
-    {
-      "valuta": 546,
+      "valuta": 485,
       "causale": "PAGOBANCOMAT",
-      "data": "May 30, 2020, 2:28:32 AM"
+      "data": "Aug 27, 2020, 4:18:58 PM"
+    },
+    {
+      "valuta": 367,
+      "causale": "PAGOBANCOMAT",
+      "data": "Jun 19, 2020, 7:59:32 AM"
+    },
+    {
+      "valuta": 76,
+      "causale": "PAGOBANCOMAT",
+      "data": "Jul 22, 2020, 12:56:36 PM"
+    },
+    {
+      "valuta": 213,
+      "causale": "PAGOBANCOMAT",
+      "data": "Apr 4, 2020, 4:30:53 AM"
+    },
+    {
+      "valuta": 226,
+      "causale": "BOLLETTINO",
+      "data": "Jul 25, 2020, 12:46:21 PM"
+    },
+    {
+      "valuta": 897,
+      "causale": "ACCREDITO",
+      "data": "Oct 30, 2021, 12:07:24 AM"
+    },
+    {
+      "valuta": 966,
+      "causale": "F24",
+      "data": "Feb 18, 2020, 7:29:21 PM"
     }
   ]
 },
@@ -143,59 +153,49 @@
   "nome": "Utente-test-3",
   "movimenti": [
     {
-      "valuta": 438,
+      "valuta": 347,
+      "causale": "PAGOBANCOMAT",
+      "data": "Oct 13, 2021, 5:40:24 AM"
+    },
+    {
+      "valuta": 289,
       "causale": "BOLLETTINO",
-      "data": "Jun 18, 2020, 8:52:39 AM"
+      "data": "Jun 5, 2020, 5:09:09 AM"
     },
     {
-      "valuta": 851,
-      "causale": "F24",
-      "data": "Jan 1, 2020, 8:40:32 PM"
-    },
-    {
-      "valuta": 523,
-      "causale": "BOLLETTINO",
-      "data": "Jul 11, 2020, 2:12:12 PM"
-    },
-    {
-      "valuta": 368,
-      "causale": "BOLLETTINO",
-      "data": "Mar 20, 2020, 4:14:04 PM"
-    },
-    {
-      "valuta": 120,
+      "valuta": 751,
       "causale": "BONIFICO",
-      "data": "Sep 3, 2020, 1:19:49 PM"
+      "data": "Apr 24, 2020, 10:07:42 PM"
     },
     {
-      "valuta": 813,
-      "causale": "BOLLETTINO",
-      "data": "Jun 5, 2021, 12:19:19 AM"
-    },
-    {
-      "valuta": 168,
+      "valuta": 51,
       "causale": "F24",
-      "data": "Nov 1, 2021, 10:36:13 AM"
+      "data": "Sep 22, 2020, 7:28:41 PM"
     },
     {
-      "valuta": 549,
-      "causale": "BOLLETTINO",
-      "data": "Dec 13, 2019, 3:01:07 AM"
-    },
-    {
-      "valuta": 987,
+      "valuta": 503,
       "causale": "F24",
-      "data": "Nov 14, 2021, 5:42:53 AM"
+      "data": "Jun 12, 2020, 2:55:40 PM"
     },
     {
-      "valuta": 684,
+      "valuta": 718,
       "causale": "BOLLETTINO",
-      "data": "Dec 5, 2020, 10:56:06 PM"
+      "data": "May 27, 2020, 3:56:13 PM"
     },
     {
-      "valuta": 253,
+      "valuta": 235,
       "causale": "BONIFICO",
-      "data": "Jun 23, 2021, 6:02:35 PM"
+      "data": "Oct 5, 2021, 3:29:34 PM"
+    },
+    {
+      "valuta": 855,
+      "causale": "BONIFICO",
+      "data": "Apr 14, 2021, 7:41:44 AM"
+    },
+    {
+      "valuta": 672,
+      "causale": "ACCREDITO",
+      "data": "Nov 26, 2020, 2:39:31 PM"
     }
   ]
 },
@@ -203,24 +203,69 @@
   "nome": "Utente-test-4",
   "movimenti": [
     {
-      "valuta": 841,
+      "valuta": 371,
       "causale": "PAGOBANCOMAT",
-      "data": "Nov 27, 2020, 4:25:28 AM"
+      "data": "Dec 25, 2020, 10:54:32 AM"
     },
     {
-      "valuta": 705,
+      "valuta": 702,
       "causale": "ACCREDITO",
-      "data": "Aug 3, 2021, 6:20:33 AM"
+      "data": "May 29, 2021, 3:46:20 PM"
     },
     {
-      "valuta": 130,
-      "causale": "ACCREDITO",
-      "data": "May 15, 2021, 8:02:02 PM"
+      "valuta": 262,
+      "causale": "PAGOBANCOMAT",
+      "data": "Feb 13, 2021, 11:17:22 PM"
     },
     {
-      "valuta": 927,
+      "valuta": 302,
+      "causale": "F24",
+      "data": "Mar 29, 2021, 4:54:22 AM"
+    },
+    {
+      "valuta": 163,
+      "causale": "PAGOBANCOMAT",
+      "data": "Apr 4, 2021, 3:22:43 PM"
+    },
+    {
+      "valuta": 969,
+      "causale": "BOLLETTINO",
+      "data": "Sep 1, 2021, 12:20:31 AM"
+    },
+    {
+      "valuta": 429,
+      "causale": "BONIFICO",
+      "data": "Nov 28, 2020, 4:46:41 AM"
+    },
+    {
+      "valuta": 190,
       "causale": "ACCREDITO",
-      "data": "Jan 22, 2020, 1:18:47 AM"
+      "data": "Aug 2, 2020, 7:43:03 AM"
+    },
+    {
+      "valuta": 351,
+      "causale": "F24",
+      "data": "Mar 29, 2021, 9:21:18 PM"
+    },
+    {
+      "valuta": 68,
+      "causale": "BONIFICO",
+      "data": "Mar 2, 2021, 11:13:50 PM"
+    },
+    {
+      "valuta": 701,
+      "causale": "PAGOBANCOMAT",
+      "data": "Jan 20, 2021, 4:02:49 PM"
+    },
+    {
+      "valuta": 24,
+      "causale": "ACCREDITO",
+      "data": "Mar 23, 2021, 8:29:11 AM"
+    },
+    {
+      "valuta": 48,
+      "causale": "BOLLETTINO",
+      "data": "Jan 28, 2020, 6:57:51 PM"
     }
   ]
 },
@@ -228,84 +273,39 @@
   "nome": "Utente-test-5",
   "movimenti": [
     {
-      "valuta": 800,
-      "causale": "PAGOBANCOMAT",
-      "data": "Jul 6, 2020, 11:21:55 AM"
-    },
-    {
-      "valuta": 802,
+      "valuta": 302,
       "causale": "F24",
-      "data": "May 10, 2020, 12:03:55 PM"
+      "data": "May 4, 2020, 3:46:30 PM"
     },
     {
-      "valuta": 448,
+      "valuta": 962,
       "causale": "BONIFICO",
-      "data": "Jun 26, 2020, 11:26:13 PM"
+      "data": "Mar 26, 2021, 2:25:46 AM"
     },
     {
-      "valuta": 34,
-      "causale": "ACCREDITO",
-      "data": "Jun 30, 2021, 7:53:13 AM"
+      "valuta": 835,
+      "causale": "BOLLETTINO",
+      "data": "Jul 1, 2021, 6:51:51 PM"
     },
     {
-      "valuta": 6,
+      "valuta": 974,
       "causale": "PAGOBANCOMAT",
-      "data": "Mar 30, 2021, 4:49:06 PM"
+      "data": "Mar 9, 2020, 4:42:08 AM"
     },
     {
-      "valuta": 975,
-      "causale": "BOLLETTINO",
-      "data": "Jan 24, 2021, 10:18:12 PM"
-    },
-    {
-      "valuta": 558,
-      "causale": "F24",
-      "data": "Nov 28, 2019, 1:15:22 AM"
-    },
-    {
-      "valuta": 996,
-      "causale": "BOLLETTINO",
-      "data": "Mar 26, 2020, 9:44:22 AM"
-    },
-    {
-      "valuta": 144,
+      "valuta": 702,
       "causale": "ACCREDITO",
-      "data": "Jul 4, 2021, 12:17:44 PM"
+      "data": "Sep 16, 2020, 4:15:29 AM"
     },
     {
-      "valuta": 706,
+      "valuta": 684,
       "causale": "BONIFICO",
-      "data": "Apr 24, 2021, 1:52:38 PM"
+      "data": "Apr 2, 2021, 12:53:07 AM"
     },
     {
-      "valuta": 490,
+      "valuta": 788,
       "causale": "PAGOBANCOMAT",
-      "data": "Aug 12, 2020, 8:23:29 AM"
-    },
-    {
-      "valuta": 21,
-      "causale": "F24",
-      "data": "Apr 11, 2021, 7:38:55 PM"
-    },
-    {
-      "valuta": 732,
-      "causale": "BOLLETTINO",
-      "data": "Apr 15, 2021, 2:07:58 AM"
-    },
-    {
-      "valuta": 108,
-      "causale": "ACCREDITO",
-      "data": "Mar 31, 2020, 5:55:32 AM"
-    },
-    {
-      "valuta": 565,
-      "causale": "F24",
-      "data": "Aug 17, 2021, 11:16:59 AM"
-    },
-    {
-      "valuta": 743,
-      "causale": "F24",
-      "data": "Dec 11, 2020, 11:46:25 AM"
+      "data": "Aug 25, 2021, 3:19:30 PM"
     }
   ]
 },
@@ -313,69 +313,9 @@
   "nome": "Utente-test-6",
   "movimenti": [
     {
-      "valuta": 120,
-      "causale": "PAGOBANCOMAT",
-      "data": "Jan 8, 2020, 6:36:02 AM"
-    },
-    {
-      "valuta": 946,
-      "causale": "PAGOBANCOMAT",
-      "data": "Jun 30, 2021, 8:07:44 PM"
-    },
-    {
-      "valuta": 719,
-      "causale": "ACCREDITO",
-      "data": "Mar 19, 2021, 3:27:36 PM"
-    },
-    {
-      "valuta": 86,
-      "causale": "BOLLETTINO",
-      "data": "May 30, 2020, 1:22:22 AM"
-    },
-    {
-      "valuta": 670,
-      "causale": "ACCREDITO",
-      "data": "Sep 1, 2020, 3:41:56 AM"
-    },
-    {
-      "valuta": 632,
-      "causale": "F24",
-      "data": "Jul 16, 2020, 5:27:29 AM"
-    },
-    {
-      "valuta": 902,
+      "valuta": 206,
       "causale": "BONIFICO",
-      "data": "Dec 9, 2019, 11:30:00 AM"
-    },
-    {
-      "valuta": 543,
-      "causale": "BONIFICO",
-      "data": "Mar 27, 2021, 6:25:41 AM"
-    },
-    {
-      "valuta": 107,
-      "causale": "BOLLETTINO",
-      "data": "Apr 15, 2021, 6:37:09 PM"
-    },
-    {
-      "valuta": 326,
-      "causale": "ACCREDITO",
-      "data": "Aug 16, 2021, 2:45:13 AM"
-    },
-    {
-      "valuta": 108,
-      "causale": "PAGOBANCOMAT",
-      "data": "Jul 20, 2020, 11:36:42 AM"
-    },
-    {
-      "valuta": 518,
-      "causale": "F24",
-      "data": "Feb 8, 2020, 1:07:30 AM"
-    },
-    {
-      "valuta": 115,
-      "causale": "PAGOBANCOMAT",
-      "data": "Apr 6, 2020, 9:25:10 AM"
+      "data": "Jul 14, 2020, 8:07:22 AM"
     }
   ]
 },
@@ -383,59 +323,54 @@
   "nome": "Utente-test-7",
   "movimenti": [
     {
-      "valuta": 155,
-      "causale": "F24",
-      "data": "May 10, 2020, 9:11:13 PM"
-    },
-    {
-      "valuta": 230,
-      "causale": "F24",
-      "data": "Jan 18, 2021, 10:26:19 AM"
-    },
-    {
-      "valuta": 161,
-      "causale": "BONIFICO",
-      "data": "Feb 22, 2020, 4:22:58 AM"
-    },
-    {
-      "valuta": 465,
-      "causale": "F24",
-      "data": "Feb 4, 2020, 4:58:27 PM"
-    },
-    {
-      "valuta": 261,
-      "causale": "PAGOBANCOMAT",
-      "data": "Jul 24, 2020, 12:41:31 AM"
-    },
-    {
-      "valuta": 141,
+      "valuta": 506,
       "causale": "BOLLETTINO",
-      "data": "Nov 12, 2020, 7:52:23 PM"
-    },
-    {
-      "valuta": 496,
-      "causale": "PAGOBANCOMAT",
-      "data": "Dec 1, 2020, 8:30:28 PM"
-    },
-    {
-      "valuta": 200,
-      "causale": "ACCREDITO",
-      "data": "Jul 25, 2021, 2:50:36 AM"
-    },
-    {
-      "valuta": 491,
-      "causale": "BONIFICO",
-      "data": "Apr 10, 2021, 9:54:20 AM"
+      "data": "Feb 9, 2021, 1:25:28 AM"
     },
     {
       "valuta": 158,
       "causale": "PAGOBANCOMAT",
-      "data": "Dec 15, 2019, 1:52:49 PM"
+      "data": "Jun 30, 2020, 4:20:59 PM"
     },
     {
-      "valuta": 15,
+      "valuta": 546,
+      "causale": "PAGOBANCOMAT",
+      "data": "Aug 4, 2020, 3:50:50 PM"
+    },
+    {
+      "valuta": 252,
+      "causale": "PAGOBANCOMAT",
+      "data": "Nov 19, 2019, 11:27:10 PM"
+    },
+    {
+      "valuta": 44,
       "causale": "F24",
-      "data": "Jun 12, 2020, 12:34:15 AM"
+      "data": "Jan 20, 2021, 8:53:15 AM"
+    },
+    {
+      "valuta": 161,
+      "causale": "PAGOBANCOMAT",
+      "data": "Dec 1, 2020, 4:24:14 PM"
+    },
+    {
+      "valuta": 635,
+      "causale": "ACCREDITO",
+      "data": "Sep 27, 2021, 12:19:22 AM"
+    },
+    {
+      "valuta": 945,
+      "causale": "F24",
+      "data": "Mar 16, 2021, 9:52:33 AM"
+    },
+    {
+      "valuta": 725,
+      "causale": "ACCREDITO",
+      "data": "Feb 1, 2020, 4:01:09 PM"
+    },
+    {
+      "valuta": 144,
+      "causale": "F24",
+      "data": "Oct 2, 2021, 1:35:37 PM"
     }
   ]
 },
@@ -443,114 +378,84 @@
   "nome": "Utente-test-8",
   "movimenti": [
     {
-      "valuta": 753,
-      "causale": "F24",
-      "data": "Jan 16, 2021, 5:28:20 PM"
-    },
-    {
-      "valuta": 761,
+      "valuta": 616,
       "causale": "ACCREDITO",
-      "data": "Dec 19, 2019, 1:24:12 PM"
+      "data": "Jan 3, 2021, 3:39:19 AM"
     },
     {
-      "valuta": 923,
-      "causale": "BOLLETTINO",
-      "data": "Nov 15, 2021, 5:35:07 AM"
-    },
-    {
-      "valuta": 672,
+      "valuta": 17,
       "causale": "BONIFICO",
-      "data": "Jun 19, 2021, 6:35:55 PM"
+      "data": "Jul 5, 2021, 5:05:30 AM"
     },
     {
-      "valuta": 271,
-      "causale": "BONIFICO",
-      "data": "Aug 14, 2021, 7:33:03 AM"
-    },
-    {
-      "valuta": 204,
-      "causale": "BOLLETTINO",
-      "data": "May 2, 2021, 8:15:31 PM"
-    },
-    {
-      "valuta": 149,
-      "causale": "BONIFICO",
-      "data": "Apr 11, 2021, 8:20:06 AM"
-    },
-    {
-      "valuta": 945,
-      "causale": "F24",
-      "data": "Dec 2, 2020, 2:24:21 PM"
-    },
-    {
-      "valuta": 302,
-      "causale": "F24",
-      "data": "Dec 16, 2020, 5:32:21 PM"
-    },
-    {
-      "valuta": 393,
-      "causale": "PAGOBANCOMAT",
-      "data": "Jun 24, 2021, 11:35:01 PM"
-    },
-    {
-      "valuta": 708,
+      "valuta": 615,
       "causale": "ACCREDITO",
-      "data": "Oct 12, 2021, 5:08:44 PM"
+      "data": "Jul 23, 2020, 9:22:10 AM"
     },
     {
-      "valuta": 88,
-      "causale": "BOLLETTINO",
-      "data": "Feb 15, 2021, 11:17:22 PM"
+      "valuta": 827,
+      "causale": "ACCREDITO",
+      "data": "May 9, 2020, 10:18:01 AM"
     },
     {
-      "valuta": 884,
+      "valuta": 479,
+      "causale": "ACCREDITO",
+      "data": "Nov 8, 2021, 12:23:32 PM"
+    },
+    {
+      "valuta": 985,
+      "causale": "BONIFICO",
+      "data": "Apr 5, 2020, 4:22:06 PM"
+    },
+    {
+      "valuta": 993,
       "causale": "PAGOBANCOMAT",
-      "data": "Mar 6, 2020, 12:59:12 AM"
+      "data": "Mar 12, 2020, 3:31:01 PM"
     },
     {
-      "valuta": 923,
-      "causale": "PAGOBANCOMAT",
-      "data": "Jul 17, 2020, 7:08:02 PM"
+      "valuta": 830,
+      "causale": "BONIFICO",
+      "data": "Nov 4, 2020, 6:31:00 AM"
     },
     {
-      "valuta": 293,
-      "causale": "BOLLETTINO",
-      "data": "Dec 26, 2020, 7:04:30 AM"
-    },
-    {
-      "valuta": 905,
+      "valuta": 830,
       "causale": "F24",
-      "data": "Jul 12, 2020, 12:18:52 PM"
+      "data": "Dec 13, 2020, 11:40:45 AM"
     },
     {
-      "valuta": 532,
-      "causale": "F24",
-      "data": "Oct 28, 2020, 4:41:15 PM"
-    },
-    {
-      "valuta": 98,
-      "causale": "F24",
-      "data": "Oct 11, 2021, 9:35:27 PM"
-    },
-    {
-      "valuta": 92,
-      "causale": "BOLLETTINO",
-      "data": "May 12, 2021, 10:24:20 AM"
-    },
-    {
-      "valuta": 777,
-      "causale": "PAGOBANCOMAT",
-      "data": "Jun 15, 2021, 1:50:04 AM"
+      "valuta": 44,
+      "causale": "BONIFICO",
+      "data": "Oct 20, 2021, 2:27:50 PM"
     },
     {
       "valuta": 182,
-      "causale": "BOLLETTINO",
-      "data": "Mar 2, 2021, 6:25:58 AM"
+      "causale": "BONIFICO",
+      "data": "Jul 4, 2021, 3:39:24 PM"
     },
     {
-      "valuta": 107,
+      "valuta": 508,
+      "causale": "F24",
+      "data": "May 22, 2020, 4:40:52 AM"
+    },
+    {
+      "valuta": 769,
+      "causale": "PAGOBANCOMAT",
+      "data": "Feb 29, 2020, 6:18:05 PM"
+    },
+    {
+      "valuta": 390,
+      "causale": "BOLLETTINO",
+      "data": "Jun 5, 2020, 9:21:04 PM"
+    },
+    {
+      "valuta": 958,
       "causale": "BONIFICO",
-      "data": "Mar 9, 2020, 9:09:19 PM"
+      "data": "Jan 20, 2021, 11:50:55 PM"
+    },
+    {
+      "valuta": 129,
+      "causale": "F24",
+      "data": "Feb 18, 2021, 9:30:54 PM"
     }
   ]
 },
@@ -558,54 +463,99 @@
   "nome": "Utente-test-9",
   "movimenti": [
     {
-      "valuta": 71,
-      "causale": "PAGOBANCOMAT",
-      "data": "Oct 27, 2020, 3:53:36 PM"
-    },
-    {
-      "valuta": 509,
-      "causale": "ACCREDITO",
-      "data": "Aug 11, 2021, 3:48:02 PM"
-    },
-    {
-      "valuta": 121,
+      "valuta": 243,
       "causale": "F24",
-      "data": "Dec 26, 2020, 1:06:28 PM"
+      "data": "Nov 18, 2019, 6:26:25 PM"
     },
     {
-      "valuta": 541,
-      "causale": "ACCREDITO",
-      "data": "Mar 20, 2021, 10:46:41 PM"
-    },
-    {
-      "valuta": 959,
+      "valuta": 379,
       "causale": "BONIFICO",
-      "data": "Sep 3, 2020, 12:24:38 PM"
+      "data": "Dec 16, 2019, 3:13:29 AM"
     },
     {
-      "valuta": 532,
+      "valuta": 325,
+      "causale": "PAGOBANCOMAT",
+      "data": "Mar 28, 2021, 3:18:34 AM"
+    },
+    {
+      "valuta": 146,
       "causale": "F24",
-      "data": "Feb 23, 2020, 4:22:29 AM"
+      "data": "Jun 4, 2020, 7:09:06 AM"
     },
     {
-      "valuta": 255,
+      "valuta": 611,
+      "causale": "BONIFICO",
+      "data": "Jan 31, 2020, 6:03:32 AM"
+    },
+    {
+      "valuta": 222,
       "causale": "F24",
-      "data": "Jun 16, 2021, 11:47:08 AM"
+      "data": "Nov 17, 2019, 9:58:51 PM"
     },
     {
-      "valuta": 800,
+      "valuta": 499,
+      "causale": "F24",
+      "data": "May 17, 2020, 9:41:14 AM"
+    },
+    {
+      "valuta": 889,
+      "causale": "F24",
+      "data": "Feb 2, 2020, 8:44:23 PM"
+    },
+    {
+      "valuta": 730,
       "causale": "ACCREDITO",
-      "data": "May 29, 2020, 4:21:16 AM"
+      "data": "Aug 22, 2020, 1:01:02 PM"
     },
     {
-      "valuta": 630,
-      "causale": "ACCREDITO",
-      "data": "Nov 13, 2020, 8:03:34 PM"
+      "valuta": 102,
+      "causale": "BOLLETTINO",
+      "data": "Sep 3, 2021, 9:18:48 PM"
     },
     {
-      "valuta": 468,
+      "valuta": 733,
       "causale": "F24",
-      "data": "Nov 15, 2020, 8:08:13 AM"
+      "data": "Apr 17, 2020, 8:28:08 PM"
+    },
+    {
+      "valuta": 215,
+      "causale": "BOLLETTINO",
+      "data": "May 8, 2020, 11:57:19 AM"
+    },
+    {
+      "valuta": 189,
+      "causale": "PAGOBANCOMAT",
+      "data": "Mar 26, 2021, 2:58:02 AM"
+    },
+    {
+      "valuta": 874,
+      "causale": "BOLLETTINO",
+      "data": "Sep 4, 2020, 12:05:17 AM"
+    },
+    {
+      "valuta": 690,
+      "causale": "BONIFICO",
+      "data": "Nov 11, 2020, 7:06:45 PM"
+    },
+    {
+      "valuta": 480,
+      "causale": "BOLLETTINO",
+      "data": "Mar 8, 2021, 8:50:17 AM"
+    },
+    {
+      "valuta": 322,
+      "causale": "BOLLETTINO",
+      "data": "Jan 26, 2020, 3:42:12 AM"
+    },
+    {
+      "valuta": 391,
+      "causale": "BOLLETTINO",
+      "data": "Aug 11, 2021, 2:11:53 PM"
+    },
+    {
+      "valuta": 450,
+      "causale": "PAGOBANCOMAT",
+      "data": "Mar 1, 2021, 3:59:57 PM"
     }
   ]
 },
@@ -613,44 +563,104 @@
   "nome": "Utente-test-10",
   "movimenti": [
     {
-      "valuta": 184,
-      "causale": "F24",
-      "data": "Sep 30, 2020, 10:07:02 AM"
-    },
-    {
-      "valuta": 961,
-      "causale": "ACCREDITO",
-      "data": "May 2, 2020, 11:08:37 AM"
-    },
-    {
-      "valuta": 795,
-      "causale": "PAGOBANCOMAT",
-      "data": "Feb 25, 2021, 12:52:14 PM"
-    },
-    {
-      "valuta": 233,
-      "causale": "PAGOBANCOMAT",
-      "data": "Feb 4, 2020, 11:23:22 PM"
-    },
-    {
-      "valuta": 61,
+      "valuta": 584,
       "causale": "BONIFICO",
-      "data": "Sep 9, 2020, 5:35:33 AM"
+      "data": "Dec 9, 2020, 1:33:49 PM"
     },
     {
-      "valuta": 342,
-      "causale": "F24",
-      "data": "Jun 2, 2020, 4:49:06 PM"
-    },
-    {
-      "valuta": 458,
-      "causale": "BONIFICO",
-      "data": "Nov 8, 2021, 5:49:58 AM"
-    },
-    {
-      "valuta": 543,
+      "valuta": 879,
       "causale": "ACCREDITO",
-      "data": "Sep 13, 2021, 11:52:09 AM"
+      "data": "Apr 4, 2020, 3:54:18 PM"
+    },
+    {
+      "valuta": 728,
+      "causale": "BOLLETTINO",
+      "data": "Nov 17, 2020, 10:59:24 AM"
+    },
+    {
+      "valuta": 466,
+      "causale": "F24",
+      "data": "Nov 5, 2021, 5:52:05 PM"
+    },
+    {
+      "valuta": 13,
+      "causale": "BOLLETTINO",
+      "data": "Jan 10, 2020, 8:35:21 AM"
+    },
+    {
+      "valuta": 83,
+      "causale": "ACCREDITO",
+      "data": "Nov 12, 2020, 11:10:39 AM"
+    },
+    {
+      "valuta": 820,
+      "causale": "F24",
+      "data": "Jan 20, 2020, 3:12:15 PM"
+    },
+    {
+      "valuta": 605,
+      "causale": "F24",
+      "data": "May 13, 2020, 8:26:10 PM"
+    },
+    {
+      "valuta": 434,
+      "causale": "ACCREDITO",
+      "data": "Jan 2, 2021, 6:08:31 PM"
+    },
+    {
+      "valuta": 681,
+      "causale": "BONIFICO",
+      "data": "Feb 19, 2021, 6:32:59 AM"
+    },
+    {
+      "valuta": 490,
+      "causale": "BONIFICO",
+      "data": "Apr 27, 2020, 6:03:49 AM"
+    },
+    {
+      "valuta": 143,
+      "causale": "PAGOBANCOMAT",
+      "data": "Dec 19, 2019, 9:16:29 AM"
+    },
+    {
+      "valuta": 820,
+      "causale": "ACCREDITO",
+      "data": "Nov 6, 2021, 5:10:01 AM"
+    },
+    {
+      "valuta": 396,
+      "causale": "PAGOBANCOMAT",
+      "data": "Oct 3, 2021, 6:23:05 AM"
+    },
+    {
+      "valuta": 297,
+      "causale": "F24",
+      "data": "Jul 22, 2021, 12:05:49 AM"
+    },
+    {
+      "valuta": 423,
+      "causale": "BONIFICO",
+      "data": "Nov 6, 2021, 8:30:01 PM"
+    },
+    {
+      "valuta": 611,
+      "causale": "BONIFICO",
+      "data": "May 21, 2021, 1:06:13 AM"
+    },
+    {
+      "valuta": 465,
+      "causale": "BOLLETTINO",
+      "data": "May 28, 2020, 7:56:38 AM"
+    },
+    {
+      "valuta": 791,
+      "causale": "ACCREDITO",
+      "data": "Apr 8, 2021, 3:41:50 AM"
+    },
+    {
+      "valuta": 99,
+      "causale": "PAGOBANCOMAT",
+      "data": "Apr 14, 2020, 4:29:12 PM"
     }
   ]
 }
