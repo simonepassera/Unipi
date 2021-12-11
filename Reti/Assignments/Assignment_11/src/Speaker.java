@@ -1,3 +1,5 @@
+// @Author Simone Passera
+
 import java.rmi.RemoteException;
 import java.rmi.registry.*;
 import java.util.*;

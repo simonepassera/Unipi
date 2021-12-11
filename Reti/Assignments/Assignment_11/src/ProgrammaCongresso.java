@@ -1,3 +1,5 @@
+// @Author Simone Passera
+
 import java.rmi.*;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.*;
