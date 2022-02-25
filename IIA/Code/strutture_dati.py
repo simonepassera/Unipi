@@ -6,65 +6,79 @@ class Problem:
     """
 
     def __init__(self, initial_state, goal_state=None):
-        """ Costruttore. Specifica lo stato iniziale e lo stato (o la lista di stati) obiettivo."""
+        """ Costruttore. Specifica lo stato iniziale e lo stato (o la lista di stati) obiettivo """
         self.initial_state = initial_state  # lo stato iniziale del problema
         self.goal_state = goal_state  # lo stato obiettivo, o la lista di stati obiettivo
 
     def actions(self, state):
-        """ Dato lo stato state, restituisce una lista di azioni che possono essere eseguite.
-        Questa funzione deve essere implementata nella sottoclasse che specializza Problem."""
+        """
+        Dato lo stato state, restituisce una lista di azioni che possono essere eseguite.
+        Questa funzione deve essere implementata nella sottoclasse che specializza Problem
+        """
+
         raise NotImplementedError
 
     def result(self, state, action):
-        """ Dato lo stato state e l'azione action, questa funzione restituisce lo stato risultante
+        """
+        Dato lo stato state e l'azione action, questa funzione restituisce lo stato risultante
         in base al modello di transizione del problema.
-        Questa funzione deve essere implementata nella sottoclasse che specializza Problem."""
+        Questa funzione deve essere implementata nella sottoclasse che specializza Problem
+        """
+
         raise NotImplementedError
 
     def goal_test(self, state):
-        """ Dato lo stato state, restituisce True se state e' uno stato obiettivo e
-        False altrimenti. Questa funzione implementa il test obiettivo del problema. """
-        # L'implementazione di default per questa funzione restituisce:
-        # True: se state e' nella lista degli stati obiettivo
-        # False: altrimenti
+        """
+        Dato lo stato state, restituisce True se state è uno stato obiettivo e False altrimenti.
+        Questa funzione implementa il test obiettivo del problema.
+        L'implementazione di default per questa funzione restituisce:
+            True: se state è nella lista degli stati obiettivo
+            False: altrimenti
+        """
 
         if isinstance(self.goal_state, list):
-            # in questo caso self.goal_state e' una lista (quindi ci sono piu' stati obiettivo)
+            # in questo caso self.goal_state è una lista (quindi ci sono piu' stati obiettivo)
             try:
                 # cerca state tra gli stati obiettivo
-                # un'eccezione e' lanciata nel caso in cui state non
+                # un'eccezione è lanciata nel caso in cui state non
                 # sia presente in self.goal_state
-                index = self.goal_state.index(state)
-                # in questo caso state e' stato trovato tra gli stati obiettivo
+                self.goal_state.index(state)
+                # in questo caso state è stato trovato tra gli stati obiettivo
                 found = True
-            except:
-                # in questo caso state non e' stato trovato tra gli stati obiettivo
-                index = -1
+            except ValueError:
+                # in questo caso state non è stato trovato tra gli stati obiettivo
                 found = False
+
             return found
         else:
-            # in questo caso self.goal_state e' un solo stato (quindi c'e' un solo stato obiettivo)
+            # in questo caso self.goal_state è un solo stato (quindi c'è un solo stato obiettivo)
             return state == self.goal_state
 
     def step_cost(self, action, stateA=None, stateB=None):
-        """ Data l'azione action, lo stato A e lo stato B,
+        """
+        Data l'azione action, lo stato A e lo stato B,
         restituisce il costo dell'esecuzione dell'azione action che porti
-        dallo stato A allo stato B."""
-        # L'implementazione di default per questa funzione restituisce
-        # 1 come costo di ogni azione
+        dallo stato A allo stato B.
+        L'implementazione di default per questa funzione restituisce
+        1 come costo di ogni azione
+        """
+
         return 1
 
     def path_cost(self, partial_cost, action, stateA=None, stateB=None):
-        """ Dato il costo partial_cost del cammino fino al precedente nodo, l'azione action,
-        lo stato A e lo stato B, restituisce il costo aggiornato del cammino. """
-        # L'implementazione di default di questa funzione assume che i costi siano additivi
-        # e usa la funzione self.step_cost per calcolare il costo dell'ultima azione
+        """
+        Dato il costo partial_cost del cammino fino al precedente nodo, l'azione action,
+        lo stato A e lo stato B, restituisce il costo aggiornato del cammino.
+        L'implementazione di default di questa funzione assume che i costi siano additivi
+        e usa la funzione self.step_cost per calcolare il costo dell'ultima azione
+        """
+
         return partial_cost + self.step_cost(action, stateA, stateB)
 
 
 class Node:
     """
-    Implementa l'astrazione di un nodo in un albero di ricerca.
+    Implementa l'astrazione di un nodo in un albero di ricerca
     """
 
     def __init__(self, state, parent=None, action=None, path_cost=0, depth=0):
@@ -73,7 +87,7 @@ class Node:
         l'azione che ha generato il nodo in questione a partire dal nodo padre
         e il costo del cammino dalla radice al nodo.
         I valori di default per parent, action e path_cost si riferiscono
-        alla radice dell'albero.
+        alla radice dell'albero
         """
 
         self.state = state  # lo stato associato al nodo
@@ -85,18 +99,17 @@ class Node:
 
     def __repr__(self):
         """
-        Specifica la stringa da stampare
-        per rappresentare il nodo.
+        Specifica la stringa da stampare per rappresentare il nodo
         """
 
-        description = 'state: {} - path cost {}'.format(self.state, self.path_cost)
+        description = f"state: {self.state} - path cost {self.path_cost}"
         return description
 
     def child_node(self, problem, action):
         """
         Restituisce il nodo (nello spazio di ricerca del problema in input)
         ottenuto eseguendo l'azione action quando
-        lo stato attuale è self.state.
+        lo stato attuale è self.state
         """
 
         new_state = problem.result(self.state, action)  # il nuovo stato
@@ -125,12 +138,11 @@ class Node:
     def solution(self, explored_set=None):
         """
         Restituisce la soluzione corrispondente al nodo self.
-        La soluzione è rappresentata per mezzo di una lista che contiene
-        i seguenti elementi:
+        La soluzione è rappresentata per mezzo di una lista che contiene i seguenti elementi:
         - in posizione 0: la lista delle azioni da eseguire per andare dalla radice dell'albero di ricerca fino al nodo self
         - in posizione 1: la lista degli stati lungo il cammino dalla radice fino al nodo self
-        - in posizione 2: il costo del cammino dalla radice fino al nodo self.
-        - in posizione 3: l'insieme degli stati esplorati (con default None per tree search).
+        - in posizione 2: il costo del cammino dalla radice fino al nodo self
+        - in posizione 3: l'insieme degli stati esplorati (con default None per tree search)
         """
 
         node_path = self.path()  # lista di nodi nel cammino dalla radice fino a self
@@ -149,41 +161,61 @@ class Node:
 
 class Queue:
     """
-    Implementa l'astrazione di una coda.
+    Implementa l'astrazione di una coda
     """
 
     def __init__(self):
-        """ Costruttore."""
-        # inizializza la lista degli elementi con una lista vuota
+        """ Costruttore"""
 
+        # inizializza la lista degli elementi con una lista vuota
         self.elements = []
 
     def is_empty(self):
-        """ Restituisce True se la coda e' vuota,
-        False altrimenti."""
+        """ Restituisce True se la coda è vuota, False altrimenti """
 
         return len(self.elements) == 0
 
     def insert(self, element):
-        """ Inserisce l'elemento E nella coda."""
+        """ Inserisce l'elemento 'element' nella coda """
+
         # Questo metodo deve essere necessariamente implementato nella sottoclasse
         raise NotImplementedError
 
     def pop(self):
-        """ Estrae e restituisce un elemento dalla coda."""
+        """ Estrae e restituisce un elemento dalla coda """
+
         # Questo metodo deve essere necessariamente implementato nella sottoclasse
         raise NotImplementedError
 
     def __repr__(self):
-        """ Specifica la stringa da stampare
-        per rappresentare la coda."""
+        """ Specifica la stringa da stampare per rappresentare la coda """
 
         return 'Gli elementi nella coda sono: ' + str(self.elements)
 
     def contains(self, element):
-        """ Restituisce True se la coda contiene element,
-        False altrimenti. """
+        """ Restituisce True se la coda contiene element, False altrimenti. """
         return element in self.elements
+
+    def index_state(self, state):
+        """
+        Cerca nella coda un nodo con stato specificato.
+        Se lo stato viene trovato restituisce l'indice nella lista corrispondente,
+        altrimenti restituisce -1
+        """
+
+        found = -1
+
+        for index in range(len(self.elements)):
+            # cerca lo stato tra gli elementi della coda
+            if self.elements[index].state == state:
+                return index
+
+        return found
+
+    def contains_state(self, state):
+        """ Restituisce True se nella coda c'e' un nodo con stato state, False altrimenti """
+
+        return self.index_state(state) > -1
 
 
 class FIFOQueue(Queue):
@@ -191,14 +223,15 @@ class FIFOQueue(Queue):
     Implementa una coda FIFO.
     """
 
-    def insert(self,E):
+    def insert(self, E):
         """ Inserisce l'elemento E nella coda."""
-        # l'elemento è inserito come primo elemento della coda
 
-        self.elements.insert(0,E)
+        # l'elemento è inserito come primo elemento della coda
+        self.elements.insert(0, E)
 
     def pop(self):
-        """ Estrae e restituisce il primo elemento della coda."""
+        """ Estrae e restituisce il primo elemento della coda """
+
         # estrae e restituisce l'elemento piu' vecchio nella coda
         # (quello corrispondente all'ultimo elemento nella lista)
         return self.elements.pop()
@@ -210,12 +243,14 @@ class LIFOQueue(Queue):
     """
 
     def insert(self, E):
-        """ Inserisce l'elemento E nella coda. """
+        """ Inserisce l'elemento E nella coda """
+
         # ogni nuovo elemento è inserito alla fine della lista
         self.elements.append(E)
 
     def pop(self):
-        """ Estrae e restituisce il primo elemento della coda."""
+        """ Estrae e restituisce il primo elemento della coda """
+
         # estrae e restituisce l'elemento piu' recentemente inserito nella coda
         # (quello corrispondente all'ultimo elemento nella lista)
 
@@ -223,8 +258,7 @@ class LIFOQueue(Queue):
 
 
 class PriorityQueue(Queue):
-
-    def __init__(self, f=lambda x:x):
+    def __init__(self, f=lambda x: x):
         """
         Costruttore.
         L'argomento f specifica la funzione da usare per calcolare la priorità
@@ -232,43 +266,46 @@ class PriorityQueue(Queue):
         """
 
         # inizializza la lista degli elementi come una lista vuota
-        self.elements = []
+        super().__init__()
         self.f = f
 
-    def insert(self,element):
-        """ Inserisce l'elemento element nella coda. """
+    def insert(self, element):
+        """ Inserisce l'elemento element nella coda """
+
         # per gestire la priorità di ciascun elemento nella lista
-        # per ogni inserimento si aggiunge anche la sua priorita'
+        # per ogni inserimento si aggiunge anche la sua priorità
 
         E = [element, self.f(element)]
         self.elements.append(E)
         # ri-ordina gli elementi nella lista in base alla funzione di ordinamento
-        self.elements.sort(key = lambda x:x[1]) # x[1] e' il secondo elemento
-        # cioè il valore in base al quale ordinare
+        self.elements.sort(key=lambda x: x[1])  # x[1] è il secondo elemento cioè il valore in base al quale ordinare
 
     def pop(self):
-        """ Estrae e restituisce il primo elemento della coda in base all'ordinamento definito."""
-        return self.elements.pop(0)[0];
+        """ Estrae e restituisce il primo elemento della coda in base all'ordinamento definito """
+
+        return self.elements.pop(0)[0]
 
     def __repr__(self):
-        """ Specifica la stringa da stampare
-        per rappresentare la coda."""
+        """ Specifica la stringa da stampare per rappresentare la coda """
+
         return 'Gli elementi nella coda sono (in ordine crescente): ' + str(self.elements)
 
     def contains(self, element):
-        """ Restituisce True se la coda contiene element,
-        False altrimenti. """
+        """ Restituisce True se la coda contiene element, False altrimenti """
+
         return element in self.elements
 
-    # --- ulteriori funzionalita' utili per gestire la frontiera ----
+    # --- ulteriori funzionalità utili per gestire la frontiera ----
 
     def index_state(self, state):
-        """ Cerca nella coda un nodo con stato specificato.
+        """
+        Cerca nella coda un nodo con stato specificato.
         Se lo stato viene trovato restituisce l'indice nella lista corrispondente,
-        altrimenti restituisce -1.
+        altrimenti restituisce -1
         """
 
         found = -1
+
         for index in range(len(self.elements)):
             # cerca lo stato tra gli elementi della coda
             if self.elements[index][0].state == state:
@@ -277,18 +314,19 @@ class PriorityQueue(Queue):
         return found
 
     def contains_state(self, state):
-        """ Restituisce True se nella coda c'e' un nodo con stato state,
-        False altrimenti."""
-        return self.index_state(state)>-1
+        """ Restituisce True se nella coda c'e' un nodo con stato state, False altrimenti """
+
+        return self.index_state(state) > -1
 
     def remove(self, index):
-        """ Rimuove dalla coda l'elemento d' indice specificato da index."""
+        """ Rimuove dalla coda l'elemento d' indice specificato da index """
+
         del self.elements[index]
 
     def get_node(self, index):
-        """ Restituisce il nodo nella coda di indice specificato. """
+        """ Restituisce il nodo nella coda di indice specificato """
 
-        if len(self.elements)> index:
+        if len(self.elements) > index:
             # se ci sono almeno index elementi restituisci l'elemento
             # della lista di posizione index
             return self.elements[index][0]
@@ -299,5 +337,11 @@ class PriorityQueue(Queue):
 
 # main()
 if __name__ == '__main__':
-    p = Problem(7)
-    print(p.goal_state)
+    q = PriorityQueue()
+    q.insert(7)
+    q.insert(6)
+    q.insert(5)
+
+    print(q)
+    print(q.pop())
+    print(q)
