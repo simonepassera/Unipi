@@ -1,3 +1,6 @@
+import math
+import random
+import sys
 import strutture_dati as sd
 
 
@@ -196,6 +199,149 @@ class RomaniaProblem(sd.Problem):
             return self.h(state)
 
 
+class Labirinto_Teseo(sd.Problem):
+    """ Questa classe implementa il problema di ricerca
+        relativo alla esercitazione 'Teseo e il labirinto'."""
+
+    def __init__(self, possible_actions=['UP', 'RIGHT', 'DOWN', 'LEFT'], initial_state='(2,1)', goal_state='(2,4)'):
+        """ Costruttore.
+            In input e possibile indicare l'ordine con il quale vegono prese in
+            considerazione le azioni.
+            Come ulteriori input opzionali e' anche possibile specificare
+            stato iniziale (default = '(2,1)') e
+            stat obiettivo (default  '(2,4)'). """
+        self.initial_state = initial_state  # posizione iniziale di Teseo
+        self.goal_state = goal_state  # posizione dell'uscita dal labirinto
+        self.possible_actions = possible_actions
+
+    def actions(self, state):
+        # Per ogni casella restituisce l'insieme delle possibili azioni
+        possible_actions = self.possible_actions[:];  # inizializza la lista delle psosibili azioni
+        # elimina le azioni che non possono essere eseguite
+        if (state == '(2,1)') or (state == '(3,2)') or (state == '(1,2)') or (state == '(1,3)') \
+                or (state == '(4,1)') or (state == '(4,2)') or (state == '(4,3)') or (state == '(4,4)'):
+            possible_actions.remove('DOWN')
+        #
+        if (state == '(3,1)') or (state == '(2,2)') or (state == '(2,3)') or (state == '(4,2)') \
+                or (state == '(1,1)') or (state == '(1,2)') or (state == '(1,3)') or (state == '(1,4)'):
+            possible_actions.remove('UP')
+        #
+        if (state == '(3,2)') or (state == '(2,3)') or (state == '(3,3)') or \
+                (state == '(1,4)') or (state == '(2,4)') or (state == '(3,4)') or (state == '(4,4)'):
+            possible_actions.remove('RIGHT')
+        #
+        if (state == '(4,2)') or (state == '(3,4)') or (state == '(3,3)') or \
+                (state == '(1,1)') or (state == '(2,1)') or (state == '(3,1)') or (state == '(4,1)'):
+            possible_actions.remove('LEFT')
+        return possible_actions
+
+    def result(self, state, action):
+        # Restituisce lo stato che si ottiene quando viene eseguita l'azione indicata
+        # mentre si è nella casella indicata da state
+
+        # ottiene le coordinate RIGA - COLONNA corrispondenti a state
+        row = int(state[1:2])
+        col = int(state[-2:-1])
+        if action == 'UP':
+            row = row - 1
+        elif action == 'DOWN':
+            row = row + 1
+        elif action == 'RIGHT':
+            col = col + 1
+        elif action == 'LEFT':
+            col = col - 1
+        # costruisci la nuova stringa di stato e restituiscila
+        new_state = '(' + str(row) + ',' + str(col) + ')'
+        return new_state
+
+    def h(self, node):
+        # Restituisce l'opposto della profondita' del nodo
+        # nota che viene sottratto anche il costo del cammino affinche'
+        # f = g + h sia uguale esattamente a - node.depth
+        return -node.depth - node.path_cost
+
+
+class Labirinto_Teseo_F(Labirinto_Teseo):
+    # in questo caso viene ri-definita solo la funzione h
+
+    def h(self, node):
+        # l'euristica in questo caso e' data da:
+        # |row - row_goal| + |col - col_goal|
+
+        # calcola row e col dello stato corrispondente al nodo
+        row = int(node.state[1:2])
+        col = int(node.state[-2:-1])
+        # calcola row e col dello stato goal
+        row_goal = int(self.goal_state[1:2])
+        col_goal = int(self.goal_state[-2:-1])
+
+        return abs(row - row_goal) + abs(col - col_goal)
+
+
+class Labirinto_Teseo_H(Labirinto_Teseo):
+    # in questo caso viene ri-definita solo la funzione h
+
+    def h(self, node):
+        # l'euristica in questo caso e' data da:
+        # |row - row_goal| + |col - col_goal|
+        # siccome vogliamo che f = h, sottraiamo il valore di g
+
+        # calcola row e col dello stato corrispondente al nodo
+        row = int(node.state[1:2])
+        col = int(node.state[-2:-1])
+        # calcola row e col dello stato goal
+        row_goal = int(self.goal_state[1:2])
+        col_goal = int(self.goal_state[-2:-1])
+
+        return abs(row - row_goal) + abs(col - col_goal) - node.path_cost
+
+
+class Labirinto_Teseo_Local(Labirinto_Teseo):
+    """ versione del problema del labirinto di Teseo
+        in cui e' definita una funzione value da usare
+        per algoritmi di ricerca locale."""
+
+    def value(self, node):
+        # questa funzione calcola il valore della funzione da massimizzare
+        # nel nostro caso e' basata sul numero minimo di mosse da compiere
+        # per arrivare alla soluzione
+
+        # calcola row e col dello stato corrispondente al nodo
+        row = int(node.state[1:2])
+        col = int(node.state[-2:-1])
+        # calcola row e col dello stato goal
+        row_goal = int(self.goal_state[1:2])
+        col_goal = int(self.goal_state[-2:-1])
+
+        return - (abs(row - row_goal) + abs(col - col_goal))
+
+
+def print_solution(solution):
+    """ Stampa a video una descrizione testuale della soluzione."""
+    if solution is None:
+        print('Fallimento.')
+    else:
+        print('Lista delle azioni: %s ' % (solution[0]))
+        print('Lista degli stati: %s ' % (solution[1]))
+        if solution[3] is not None:
+            print('Stati esplorati: %s ' % (solution[3]))
+        print('Costo della soluzione: %s' % (solution[2]))
+
+
+def recursive_depth_first_search(problem, node):
+    """Ricerca in profondità ricorsiva """
+    # controlla se lo stato del nodo è uno stato obiettivo
+    if problem.goal_test(node.state):
+        return node.solution()
+    # in caso contrario continua con la ricerca
+    for action in problem.actions(node.state):
+        child_node = node.child_node(problem, action)
+        result = recursive_depth_first_search(problem, child_node)
+        if result is not None:
+            return result
+    return None
+
+
 def breadth_first_search(problem):
     """ Ricerca-grafo in ampiezza """
 
@@ -265,6 +411,30 @@ def uniform_cost_search(problem):
     return None  # in questo caso ritorna con fallimento
 
 
+def depth_first_search_tree(problem):
+    """Ricerca-albero in profondità """
+    node = sd.Node(problem.initial_state)  # il costo del cammino è inizializzato nel costruttore del nodo
+    # controlla se lo stato iniziale e' uno stato obiettivo
+    if problem.goal_test(node.state):
+        return node.solution()
+
+    frontier = sd.LIFOQueue() # la frontiera e' una coda LIFO
+    frontier.insert(node)
+
+    while not frontier.is_empty():
+        node = frontier.pop()  # estrae il nodo dalla frontiera
+        # print('Node: %s' % node)
+
+        # controlla se lo stato del nodo è uno stato obiettivo
+        if problem.goal_test(node.state):
+            return node.solution()
+        # espandi la frontiera
+        for action in problem.actions(node.state):
+            child_node = node.child_node(problem,action)
+            frontier.insert(child_node)
+    return None  # in questo caso ritorna con fallimento
+
+
 def depth_first_search_graph(problem):
     """ Ricerca-grafo in profondità """
 
@@ -325,6 +495,24 @@ def limited_depth_first_search_tree(problem, depth_limit):
     return None  # in questo caso ritorna con fallimento
 
 
+def limited_recursive_depth_first_search(problem, node, depth_limit):
+    """Ricerca in profondita' ricorsiva con depth_limit"""
+    # controlla se lo stato del nodo e' uno stato obiettivo
+
+    if depth_limit < 0:
+        return None
+
+    if problem.goal_test(node.state):
+        return node.solution()
+    # in caso contrario continua con la ricerca
+    for action in problem.actions(node.state):
+        child_node = node.child_node(problem, action)
+        result = limited_recursive_depth_first_search(problem, child_node, depth_limit - 1)
+        if result is not None:
+            return result
+    return None
+
+
 def astar_search(problem):
     """ Ricerca A* """
 
@@ -360,6 +548,51 @@ def astar_search(problem):
     return None  # in questo caso ritorna con fallimento
 
 
+def hill_climbing(problem):
+    """ Ricerca locale - Hill-climbing."""
+    current = sd.Node(problem.initial_state)
+
+    while True:
+        neighbors = [current.child_node(problem, action) for action in problem.actions(current.state)]
+        # se current non ha successori esci e restituisci current
+        if not neighbors:
+            break
+        # scegli il vicino con valore piu' alto
+        neighbor = (sorted(neighbors, key=lambda x: problem.value(x), reverse=True))[0]
+        if problem.value(neighbor) <= problem.value(current):
+            break
+        else:
+            current = neighbor
+    return current
+
+
+def schedule_ex(k=100, lam=0.5, limit=100):
+    """ Una possibile funzione di scheduling per
+        l'algoritmo di simulated annealing."""
+    # La temperatura è fatta decrescere seguendo una legge esponenziale
+    # Nota: k è il valore della temperatura iniziale
+    return lambda t: (k * math.exp(-lam * t) if t < limit else 0)
+
+
+def simulated_annealing(problem, schedule=schedule_ex()):
+    """Ricerca locale - Simulated Annealing"""
+    current = sd.Node(problem.initial_state)
+
+    for t in range(sys.maxsize):  # sys.maxsize e' il massimo numero intero
+        T = schedule(t)
+        if T == 0:
+            return current
+        neighbors = [current.child_node(problem, action) for action in problem.actions(current.state)]
+        # se current non ha successori esci e restituisci current
+        if not neighbors:
+            return current
+
+        next = random.choice(neighbors)
+        delta_e = problem.value(next) - problem.value(current)
+        if delta_e > 0 or (random.random() < (math.exp(delta_e / T))):
+            current = next
+
+
 # main()
 if __name__ == '__main__':
     p = ToyProblem1('A', 'G')
@@ -367,5 +600,5 @@ if __name__ == '__main__':
     print('DF: ' + str(depth_first_search_graph(p)))
     print('UC: ' + str(uniform_cost_search(p)))
     print('DL: ' + str(limited_depth_first_search_tree(p, 4)))
-    #print('A*: ' + str(astar_search(p)))
+    # print('A*: ' + str(astar_search(p)))
 
