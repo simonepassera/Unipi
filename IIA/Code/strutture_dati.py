@@ -335,6 +335,34 @@ class PriorityQueue(Queue):
             return None
 
 
+class Game:
+    """
+    Questa classe implementa l'astrazione di un gioco.
+    Per rappresentare un gioco specializzare questa classe implementandone i metodi.
+    """
+
+    def player(self, state):
+        """ Restituisce il giocatore la cui mossa è in questo stato."""
+        raise NotImplementedError
+
+    def actions(self, state):
+        """ Restituisce la lista delle possibili mosse nello stato state. """
+        raise NotImplementedError
+
+    def result(self, state, action):
+        """ Restituisce lo stato che risulta dalla mossa action nello stato state. """
+        raise NotImplementedError
+
+    def terminal_test(self, state):
+        """Restituisce True se state è uno stato finale (se il gioco è terminato),
+           False altrimenti."""
+        return len(self.actions(state)) == 0
+
+    def utility(self, state):
+        """ Restituisce il valore di utilita' dello stato state per il giocatore. """
+        raise NotImplementedError
+
+
 # main()
 if __name__ == '__main__':
     q = PriorityQueue()
