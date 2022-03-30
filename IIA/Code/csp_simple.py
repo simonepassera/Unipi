@@ -2,9 +2,13 @@
 
 from utils import argmin, argmax, count, first
 
-from strutture_dati import *
+# import search
+# import invece codice semplificato di Claudio Gallicchio
+from Problem import *
+from Node import *
+from Queue import *
 
-# from collections import defaultdict
+from collections import defaultdict
 from functools import reduce
 
 import itertools
