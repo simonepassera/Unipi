@@ -160,8 +160,7 @@ def parse_definite_clause(s):
 
 
 # Useful constant Exprs used in examples and code:
-A, B, C, D, E, F, G, P, Q, x, y, z = map(Expr, 'ABCDEFGPQxyz')
-
+A, B, C, D, E, F, G, P, Q, x, y, z, v = map(Expr, 'ABCDEFGPQxyzv')
 
 def is_variable(x):
     """ Restituisce True se l'argomento e' una variabile

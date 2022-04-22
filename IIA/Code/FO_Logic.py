@@ -101,4 +101,6 @@ def subst(s, x):
     else:
         return Expr(x.op, *[subst(s, arg) for arg in x.args])
 
-            
+
+if __name__ == '__main__':
+    unify(P(A, x, F(G(y))), P(z, F(z), F(v)), {})
