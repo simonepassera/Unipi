@@ -2,7 +2,7 @@ from itertools import product
 
 
 def get_matching_event(event_condition, generic_outcome_space):
-    return set([outcome for outcome in generic_outcome_space if event_condition(outcome)])
+    return set([sum_key for sum_key in generic_outcome_space if event_condition(sum_key)])
 
 
 def compute_event_probability(event_condition, generic_sample_space):
@@ -19,7 +19,8 @@ def compute_event_probability(event_condition, generic_sample_space):
     return outcomes_num / sample_space_num
 
 
-def has_sum_of_21(outcome): return outcome == 21
+def has_sum_of_21(dices_sum): return dices_sum == 21
+
 
 possible_rolls = list(range(1, 7))
 sample_space_tuples = set(product(possible_rolls, repeat=6))
@@ -29,7 +30,7 @@ for outcome in sample_space_tuples:
     key = sum(outcome)
     value = sample_space.get(key)
 
-    if value == None:
+    if value is None:
         sample_space.update({key: 1})
     else:
         sample_space.update({key: value + 1})
