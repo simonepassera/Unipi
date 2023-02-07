@@ -1,5 +1,9 @@
 from collections import defaultdict
 from itertools import product
+import matplotlib.pyplot as plt
+import random
+from scipy.stats import bernoulli
+import numpy
 
 
 def get_matching_event(event_condition, generic_sample_space):
@@ -31,3 +35,29 @@ for outcome in sample_space_tuples:
 
 prob = compute_event_probability(has_sum_of_21, weighted_sample_space)
 print(f"6 rolls sum to 21 with a probability of {prob}")
+
+
+x_6_dices = list(weighted_sample_space.keys())
+y_6_dices = [weighted_sample_space[key] for key in x_6_dices]
+
+plt.xlabel("Dice-sum")
+plt.ylabel("Number of rolls combinations with x sum")
+# plt.bar(x_6_dices, y_6_dices, color="blue")
+plt.xticks(x_6_dices)
+plt.grid()
+# plt.show()
+
+
+N = 100000
+x = range(N)
+y = [random.uniform(1, 20) for _ in x]
+# plt.scatter(x, y)
+# plt.show()
+
+print(bernoulli.rvs(p=0.5, size=10))
+
+array = numpy.random.binomial(1000, 0.7, 500) / 1000
+
+counts, bin_edges, _ = plt.hist(array, bins='auto')
+print(array.size, bin_edges.tolist())
+plt.show()

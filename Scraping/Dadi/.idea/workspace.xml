@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a56376c0-ce88-486f-a543-07ab1449aba3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_3/main" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_3/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_3/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_3/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_4/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_4/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_4/main" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_4/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_4/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_4/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_5/main" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_5/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_5/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi-operativi/Assegnamento_3/Es_5/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
