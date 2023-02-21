@@ -20,7 +20,7 @@ print(df_nfl_name)
 # 1:
 print(df_nfl_sort.groupby('Team').size())
 # 2:
-print(df_nfl_sort['Team'].value_counts())
+print(df_nfl_sort[['Team']].value_counts())
 # 3
 print(df_nfl_sort.groupby('Team')['Name'].count())
 
