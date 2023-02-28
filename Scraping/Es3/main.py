@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 
 df_bike = pd.read_csv('SeoulBikeData.csv', encoding='unicode_escape', parse_dates=['Date'], dayfirst=True)
 df_plot = df_bike.groupby(df_bike.Date.dt.year)[['Rented Bike Count', 'Temperature(°C)', 'Wind speed (m/s)', 'Rainfall(mm)']].mean().reset_index()
-
+print(df_plot)
 # Grouped bar chart:
 df_plot.plot(kind='bar', x='Date', y=['Rented Bike Count', 'Temperature(°C)', 'Wind speed (m/s)', 'Rainfall(mm)'], title='Valori medi 2017/2018')
 plt.ylabel('Values')
