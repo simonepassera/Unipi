@@ -27,3 +27,13 @@ print('Rimuovo il blocco 91857 da dates:')
 dates.set_index('block_id', inplace=True)
 dates.drop(91857, inplace=True)
 print(dates.iloc[91855:91860])
+
+# 2: distribuzione dei blocchi: numero di transazioni per ogni blocco, considerando l'intero periodo
+print()
+print('Numero di transazioni per ogni blocco:')
+print(transactions.groupby('blk_id').count())
+# Numero di transazioni per ogni mese
+print()
+print('Numero di transazioni per ogni mese:')
+merge_df = transactions.merge(dates, left_on='blk_id', right_on='block_id')
+print(merge_df.groupby(pd.Grouper(key='time', freq='1M'))['tx_id'].count())
