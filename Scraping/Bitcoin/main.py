@@ -37,3 +37,10 @@ print()
 print('Numero di transazioni per ogni mese:')
 merge_df = transactions.merge(dates, left_on='blk_id', right_on='block_id')
 print(merge_df.groupby(pd.Grouper(key='time', freq='1M'))['tx_id'].count())
+
+# 3: distribuzione delle fee spese in ogni transazione nell'intero periodo
+print()
+print('Fee per ogni transazione:')
+input_output = inputs.merge(outputs, how='left', on='tx_id')
+print(outputs)
+print(input_output)
