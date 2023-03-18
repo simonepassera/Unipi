@@ -40,9 +40,9 @@ if not os.path.isfile("imdb.csv"):
     imdb.close()
 
 df = pd.read_csv("imdb.csv")
-season_8 = df[df["Season"] == 8]
 
-print(season_8)
-
-sns.barplot(x="Episode", y="Rating", data=season_8)
+seasons_mean = df.groupby("Season").mean(numeric_only=True).reset_index()
+ax = sns.barplot(x="Season", y="Rating", data=seasons_mean)
+ax.set(title="Game of Thrones")
+ax.bar_label(ax.containers[0])
 plt.show()
