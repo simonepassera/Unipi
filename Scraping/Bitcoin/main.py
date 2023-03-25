@@ -27,6 +27,22 @@ print('Rimuovo il blocco 91857 da dates:')
 dates.set_index('block_id', inplace=True)
 dates.drop(91857, inplace=True)
 print(dates.iloc[91855:91860])
+print()
+
+# Ricerca corrispondenza errate tra pk_id e sig_id
+print("Ricerca corrispondenza errate tra pk_id e sig_id")
+print()
+
+InputOutput = pd.merge(outputs, inputs, on="output_id")
+
+print(InputOutput.head())
+print()
+
+Invalid_pk_sig = InputOutput.loc[InputOutput['sig_id'] != InputOutput['pk_id']]
+
+print("Transazioni inconsistenti trovate =", len(Invalid_pk_sig.index))
+print()
+print(Invalid_pk_sig)
 
 # 2: distribuzione dei blocchi: numero di transazioni per ogni blocco, considerando l'intero periodo
 print()
