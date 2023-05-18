@@ -1,502 +1,502 @@
 [
   {
+    "name": "Binance",
+    "trade_volume_24h_btc": 268133.6359190983,
+    "converted_volume_usd_btc": 554487351
+  },
+  {
     "name": "Coinbase Exchange",
-    "trade_volume_24h_btc": 43873.86579316683,
-    "converted_volume_usd_btc": 222812817
-  },
-  {
-    "name": "OKX",
-    "trade_volume_24h_btc": 43206.16860408616,
-    "converted_volume_usd_btc": 101984496
-  },
-  {
-    "name": "KuCoin",
-    "trade_volume_24h_btc": 23243.54754760918,
-    "converted_volume_usd_btc": 5477882
-  },
-  {
-    "name": "Huobi",
-    "trade_volume_24h_btc": 22240.91447570824,
-    "converted_volume_usd_btc": 52003411
-  },
-  {
-    "name": "Kraken",
-    "trade_volume_24h_btc": 21795.566488025383,
-    "converted_volume_usd_btc": 147365442
+    "trade_volume_24h_btc": 31469.601762112423,
+    "converted_volume_usd_btc": 156224657
   },
   {
     "name": "Bybit",
-    "trade_volume_24h_btc": 17241.297816168793,
-    "converted_volume_usd_btc": 18153098
+    "trade_volume_24h_btc": 20569.535271865545,
+    "converted_volume_usd_btc": 16872891
   },
   {
-    "name": "Crypto.com Exchange",
-    "trade_volume_24h_btc": 11957.077501892045,
-    "converted_volume_usd_btc": 24353117
+    "name": "OKX",
+    "trade_volume_24h_btc": 31530.95975345555,
+    "converted_volume_usd_btc": 4970837
+  },
+  {
+    "name": "KuCoin",
+    "trade_volume_24h_btc": 14925.76857508093,
+    "converted_volume_usd_btc": 36713487
+  },
+  {
+    "name": "Huobi",
+    "trade_volume_24h_btc": 14722.71888148221,
+    "converted_volume_usd_btc": 104208657
   },
   {
     "name": "Binance US",
-    "trade_volume_24h_btc": 12037.223240602396,
-    "converted_volume_usd_btc": 104592478
+    "trade_volume_24h_btc": 5065.2733512663735,
+    "converted_volume_usd_btc": 24029792
+  },
+  {
+    "name": "Crypto.com Exchange",
+    "trade_volume_24h_btc": 4563.8974970135105,
+    "converted_volume_usd_btc": 2128504
   },
   {
     "name": "Bitfinex",
-    "trade_volume_24h_btc": 2228.7511835982677,
-    "converted_volume_usd_btc": 7808062
-  },
-  {
-    "name": "Binance",
-    "trade_volume_24h_btc": 569868.3588293144,
-    "converted_volume_usd_btc": 537748782
+    "trade_volume_24h_btc": 2446.297417352556,
+    "converted_volume_usd_btc": 646351
   },
   {
     "name": "Bitget",
-    "trade_volume_24h_btc": 21119.993151504415,
-    "converted_volume_usd_btc": 8590100
-  },
-  {
-    "name": "Phemex",
-    "trade_volume_24h_btc": 5023.917171558024,
-    "converted_volume_usd_btc": 228412
-  },
-  {
-    "name": "Gemini",
-    "trade_volume_24h_btc": 800.2539267057565,
-    "converted_volume_usd_btc": 6069233
-  },
-  {
-    "name": "BitMart",
-    "trade_volume_24h_btc": 26691.32738348678,
-    "converted_volume_usd_btc": 172683216
-  },
-  {
-    "name": "XT.COM",
-    "trade_volume_24h_btc": 25282.2421916903,
-    "converted_volume_usd_btc": 184399423
-  },
-  {
-    "name": "BKEX",
-    "trade_volume_24h_btc": 27561.901381286625,
-    "converted_volume_usd_btc": 2254387
-  },
-  {
-    "name": "Gate.io",
-    "trade_volume_24h_btc": 27991.04782120597,
-    "converted_volume_usd_btc": 150425200
+    "trade_volume_24h_btc": 23914.955670971587,
+    "converted_volume_usd_btc": 8332877
   },
   {
     "name": "MEXC Global",
-    "trade_volume_24h_btc": 36173.00093189018,
-    "converted_volume_usd_btc": 401619644
+    "trade_volume_24h_btc": 22667.627363756805,
+    "converted_volume_usd_btc": 2293058
   },
   {
-    "name": "BTCEX",
-    "trade_volume_24h_btc": 18794.64716886796,
-    "converted_volume_usd_btc": 250285110
+    "name": "Gate.io",
+    "trade_volume_24h_btc": 20395.96910710505,
+    "converted_volume_usd_btc": 125128605
+  },
+  {
+    "name": "Kraken",
+    "trade_volume_24h_btc": 17691.941496756433,
+    "converted_volume_usd_btc": 15317674
   },
   {
     "name": "BingX",
-    "trade_volume_24h_btc": 18688.945719927917,
-    "converted_volume_usd_btc": 4032229
+    "trade_volume_24h_btc": 11049.49883638406,
+    "converted_volume_usd_btc": 5628365
+  },
+  {
+    "name": "Phemex",
+    "trade_volume_24h_btc": 3237.9595279638347,
+    "converted_volume_usd_btc": 7339863
+  },
+  {
+    "name": "Gemini",
+    "trade_volume_24h_btc": 1015.8350511582129,
+    "converted_volume_usd_btc": 12097543
+  },
+  {
+    "name": "BKEX",
+    "trade_volume_24h_btc": 19808.892770842278,
+    "converted_volume_usd_btc": 215321626
   },
   {
     "name": "WhiteBIT",
-    "trade_volume_24h_btc": 10095.051200024147,
-    "converted_volume_usd_btc": 86516543
-  },
-  {
-    "name": "Bitstamp",
-    "trade_volume_24h_btc": 5665.576719090722,
-    "converted_volume_usd_btc": 25484645
-  },
-  {
-    "name": "Hotbit",
-    "trade_volume_24h_btc": 4608.672093306079,
-    "converted_volume_usd_btc": 7166840
-  },
-  {
-    "name": "BtcTurk PRO",
-    "trade_volume_24h_btc": 4446.733297749482,
-    "converted_volume_usd_btc": 11548705
-  },
-  {
-    "name": "EXMO",
-    "trade_volume_24h_btc": 3707.1760139550393,
-    "converted_volume_usd_btc": 4710412
-  },
-  {
-    "name": "LATOKEN",
-    "trade_volume_24h_btc": 3109.975961529302,
-    "converted_volume_usd_btc": 28609169
-  },
-  {
-    "name": "Bitkub",
-    "trade_volume_24h_btc": 1601.8708338281688,
-    "converted_volume_usd_btc": 3951787
-  },
-  {
-    "name": "Bitso",
-    "trade_volume_24h_btc": 1012.9283269694859,
-    "converted_volume_usd_btc": 3300408
-  },
-  {
-    "name": "CoinEx",
-    "trade_volume_24h_btc": 1025.1315997369113,
-    "converted_volume_usd_btc": 222204
-  },
-  {
-    "name": "Bitbank",
-    "trade_volume_24h_btc": 660.6829946680967,
-    "converted_volume_usd_btc": 142023
-  },
-  {
-    "name": "WOO X",
-    "trade_volume_24h_btc": 1755.528106574568,
-    "converted_volume_usd_btc": 14090695
-  },
-  {
-    "name": "Bittrex",
-    "trade_volume_24h_btc": 365.78961255386196,
-    "converted_volume_usd_btc": 543581
-  },
-  {
-    "name": "Okcoin",
-    "trade_volume_24h_btc": 298.86406470245856,
-    "converted_volume_usd_btc": 1965301
-  },
-  {
-    "name": "Max Maicoin",
-    "trade_volume_24h_btc": 260.04069766115725,
-    "converted_volume_usd_btc": 734439
-  },
-  {
-    "name": "BitMEX",
-    "trade_volume_24h_btc": 16.453997304402854,
-    "converted_volume_usd_btc": 185524
-  },
-  {
-    "name": "Coinsbit",
-    "trade_volume_24h_btc": 27416.300695855658,
-    "converted_volume_usd_btc": 302792427
-  },
-  {
-    "name": "LBank",
-    "trade_volume_24h_btc": 40438.04769009582,
-    "converted_volume_usd_btc": 10703945
+    "trade_volume_24h_btc": 15857.895212673331,
+    "converted_volume_usd_btc": 211666630
   },
   {
     "name": "Upbit",
-    "trade_volume_24h_btc": 62694.47303290065,
-    "converted_volume_usd_btc": 60016606
+    "trade_volume_24h_btc": 30935.56773557816,
+    "converted_volume_usd_btc": 134172843
   },
   {
     "name": "DigiFinex",
-    "trade_volume_24h_btc": 21565.259180479195,
-    "converted_volume_usd_btc": 27391235
+    "trade_volume_24h_btc": 13378.90139617673,
+    "converted_volume_usd_btc": 19371693
   },
   {
-    "name": "Bitrue",
-    "trade_volume_24h_btc": 50642.808865809944,
-    "converted_volume_usd_btc": 40768002
+    "name": "BitMart",
+    "trade_volume_24h_btc": 15463.729758886986,
+    "converted_volume_usd_btc": 135642311
   },
   {
-    "name": "Bithumb",
-    "trade_volume_24h_btc": 10227.05318046885,
-    "converted_volume_usd_btc": 14515941
-  },
-  {
-    "name": "Tidex",
-    "trade_volume_24h_btc": 39159.919802867196,
-    "converted_volume_usd_btc": 518863860
-  },
-  {
-    "name": "BigONE",
-    "trade_volume_24h_btc": 7369.661955841634,
-    "converted_volume_usd_btc": 27281549
-  },
-  {
-    "name": "Dex-Trade",
-    "trade_volume_24h_btc": 5326.132874182254,
-    "converted_volume_usd_btc": 69814066
-  },
-  {
-    "name": "Poloniex",
-    "trade_volume_24h_btc": 3644.887260714905,
-    "converted_volume_usd_btc": 2694016
-  },
-  {
-    "name": "Paribu",
-    "trade_volume_24h_btc": 3254.310090166474,
-    "converted_volume_usd_btc": 15787185
-  },
-  {
-    "name": "bitFlyer",
-    "trade_volume_24h_btc": 1922.2879137119603,
-    "converted_volume_usd_btc": 32201057
-  },
-  {
-    "name": "FinexBox",
-    "trade_volume_24h_btc": 394.8643329086238,
-    "converted_volume_usd_btc": 267893
-  },
-  {
-    "name": "Indodax",
-    "trade_volume_24h_btc": 380.8360532193179,
-    "converted_volume_usd_btc": 2095080
-  },
-  {
-    "name": "VALR",
-    "trade_volume_24h_btc": 431.1229527335761,
-    "converted_volume_usd_btc": 8203990
-  },
-  {
-    "name": "Kanga",
-    "trade_volume_24h_btc": 349.43189831735776,
-    "converted_volume_usd_btc": 386558
-  },
-  {
-    "name": "Luno",
-    "trade_volume_24h_btc": 298.8498575537635,
-    "converted_volume_usd_btc": 2975044
-  },
-  {
-    "name": "Korbit",
-    "trade_volume_24h_btc": 127.57365651058035,
-    "converted_volume_usd_btc": 840219
-  },
-  {
-    "name": "Coins.ph",
-    "trade_volume_24h_btc": 76.43352549328667,
-    "converted_volume_usd_btc": 1750816
-  },
-  {
-    "name": "Blockchain.com",
-    "trade_volume_24h_btc": 65.09921853278654,
-    "converted_volume_usd_btc": 135806
-  },
-  {
-    "name": "Kuna Exchange",
-    "trade_volume_24h_btc": 39.617998528834846,
-    "converted_volume_usd_btc": 490865
-  },
-  {
-    "name": "Coinmetro",
-    "trade_volume_24h_btc": 30.612702550192793,
-    "converted_volume_usd_btc": 431621
-  },
-  {
-    "name": "NiceHash",
-    "trade_volume_24h_btc": 12.967556281464882,
-    "converted_volume_usd_btc": 148061
-  },
-  {
-    "name": "P2B",
-    "trade_volume_24h_btc": 45529.12272919004,
-    "converted_volume_usd_btc": 331246103
-  },
-  {
-    "name": "PancakeSwap (v2)",
-    "trade_volume_24h_btc": 6925.3715908193535,
-    "converted_volume_usd_btc": 1069400
-  },
-  {
-    "name": "Deepcoin",
-    "trade_volume_24h_btc": 16220.723149804762,
-    "converted_volume_usd_btc": 1451827
-  },
-  {
-    "name": "Uniswap (v2)",
-    "trade_volume_24h_btc": 4913.289012766191,
-    "converted_volume_usd_btc": 18995640
-  },
-  {
-    "name": "Uniswap (Arbitrum One)",
-    "trade_volume_24h_btc": 4202.796276155569,
-    "converted_volume_usd_btc": 58879401
-  },
-  {
-    "name": "Coinstore",
-    "trade_volume_24h_btc": 5995.132757641925,
-    "converted_volume_usd_btc": 63358106
-  },
-  {
-    "name": "BIT",
-    "trade_volume_24h_btc": 3693.740373803024,
-    "converted_volume_usd_btc": 29402749
-  },
-  {
-    "name": "Pionex",
-    "trade_volume_24h_btc": 15474.703294305853,
-    "converted_volume_usd_btc": 104079464
-  },
-  {
-    "name": "Uniswap (Polygon)",
-    "trade_volume_24h_btc": 2732.351394191076,
-    "converted_volume_usd_btc": 17386751
-  },
-  {
-    "name": "Coinone",
-    "trade_volume_24h_btc": 2617.0372511841406,
-    "converted_volume_usd_btc": 6356287
-  },
-  {
-    "name": "Bitvavo",
-    "trade_volume_24h_btc": 2306.0701437562275,
-    "converted_volume_usd_btc": 2989075
-  },
-  {
-    "name": "Cryptology",
-    "trade_volume_24h_btc": 1651.849621052504,
-    "converted_volume_usd_btc": 1924430
-  },
-  {
-    "name": "FMFW.io",
-    "trade_volume_24h_btc": 16421.224223821362,
-    "converted_volume_usd_btc": 40479324
-  },
-  {
-    "name": "Uniswap (Optimism)",
-    "trade_volume_24h_btc": 1430.5702373219503,
-    "converted_volume_usd_btc": 8263937
-  },
-  {
-    "name": "AscendEX (BitMax)",
-    "trade_volume_24h_btc": 10674.218417356697,
-    "converted_volume_usd_btc": 4246851
-  },
-  {
-    "name": "Quickswap (v3)",
-    "trade_volume_24h_btc": 951.8374713653196,
-    "converted_volume_usd_btc": 5393378
-  },
-  {
-    "name": "Trader Joe v2",
-    "trade_volume_24h_btc": 864.5922613272423,
-    "converted_volume_usd_btc": 9331029
+    "name": "BTCEX",
+    "trade_volume_24h_btc": 11393.431714452177,
+    "converted_volume_usd_btc": 526767
   },
   {
     "name": "BTSE",
-    "trade_volume_24h_btc": 37938.82086782231,
-    "converted_volume_usd_btc": 342032703
+    "trade_volume_24h_btc": 11716.516111092184,
+    "converted_volume_usd_btc": 128510912
   },
   {
-    "name": "Sushiswap (Arbitrum One)",
-    "trade_volume_24h_btc": 790.1548302861169,
-    "converted_volume_usd_btc": 2459680
+    "name": "Tidex",
+    "trade_volume_24h_btc": 10079.207444557966,
+    "converted_volume_usd_btc": 105353178
   },
   {
-    "name": "BitBNS",
-    "trade_volume_24h_btc": 707.2251769523274,
-    "converted_volume_usd_btc": 194598
+    "name": "Bitrue",
+    "trade_volume_24h_btc": 33775.99255954051,
+    "converted_volume_usd_btc": 2274527
   },
   {
-    "name": "Orca",
-    "trade_volume_24h_btc": 562.1044399808737,
-    "converted_volume_usd_btc": 282263
+    "name": "Hotbit",
+    "trade_volume_24h_btc": 4373.635208405956,
+    "converted_volume_usd_btc": 6726172
   },
   {
-    "name": "Velodrome Finance",
-    "trade_volume_24h_btc": 1019.6380788947719,
-    "converted_volume_usd_btc": 538185
+    "name": "EXMO",
+    "trade_volume_24h_btc": 2873.3092370729814,
+    "converted_volume_usd_btc": 15770211
   },
   {
-    "name": "Pancakeswap (Stableswap)",
-    "trade_volume_24h_btc": 498.6073777932475,
-    "converted_volume_usd_btc": 8116298
+    "name": "Bitso",
+    "trade_volume_24h_btc": 1086.616889545245,
+    "converted_volume_usd_btc": 19269458
   },
   {
-    "name": "Dodo (BSC)",
-    "trade_volume_24h_btc": 493.90883414669247,
-    "converted_volume_usd_btc": 6639545
+    "name": "CoinEx",
+    "trade_volume_24h_btc": 1041.8715085183896,
+    "converted_volume_usd_btc": 12960391
   },
   {
-    "name": "DeFi Swap",
-    "trade_volume_24h_btc": 483.59977532308733,
-    "converted_volume_usd_btc": 11330762
+    "name": "Bitkub",
+    "trade_volume_24h_btc": 940.9075847144074,
+    "converted_volume_usd_btc": 730032
+  },
+  {
+    "name": "Bitbank",
+    "trade_volume_24h_btc": 691.1400254478276,
+    "converted_volume_usd_btc": 5884232
+  },
+  {
+    "name": "LATOKEN",
+    "trade_volume_24h_btc": 1052.9994210587627,
+    "converted_volume_usd_btc": 14178763
+  },
+  {
+    "name": "Max Maicoin",
+    "trade_volume_24h_btc": 563.133611140399,
+    "converted_volume_usd_btc": 1084915
+  },
+  {
+    "name": "WOO X",
+    "trade_volume_24h_btc": 1786.018658623151,
+    "converted_volume_usd_btc": 21877327
+  },
+  {
+    "name": "Indodax",
+    "trade_volume_24h_btc": 154.94701640471814,
+    "converted_volume_usd_btc": 1604378
+  },
+  {
+    "name": "Bittrex Global",
+    "trade_volume_24h_btc": 79.74669023402824,
+    "converted_volume_usd_btc": 188100
+  },
+  {
+    "name": "Blockchain.com",
+    "trade_volume_24h_btc": 52.357460900795644,
+    "converted_volume_usd_btc": 293867
+  },
+  {
+    "name": "Coins.ph",
+    "trade_volume_24h_btc": 10.088480966115867,
+    "converted_volume_usd_btc": 146000
+  },
+  {
+    "name": "Okcoin",
+    "trade_volume_24h_btc": 9.106460660602705,
+    "converted_volume_usd_btc": 229537
+  },
+  {
+    "name": "NiceHash",
+    "trade_volume_24h_btc": 7.996101445058011,
+    "converted_volume_usd_btc": 59552
+  },
+  {
+    "name": "LBank",
+    "trade_volume_24h_btc": 28647.25305984221,
+    "converted_volume_usd_btc": 10542485
+  },
+  {
+    "name": "XT.COM",
+    "trade_volume_24h_btc": 20266.975342098718,
+    "converted_volume_usd_btc": 193224809
+  },
+  {
+    "name": "Coinsbit",
+    "trade_volume_24h_btc": 8889.683295974097,
+    "converted_volume_usd_btc": 75215374
+  },
+  {
+    "name": "Bithumb",
+    "trade_volume_24h_btc": 4453.659486706163,
+    "converted_volume_usd_btc": 37457927
+  },
+  {
+    "name": "BigONE",
+    "trade_volume_24h_btc": 3645.7028627202185,
+    "converted_volume_usd_btc": 26725463
+  },
+  {
+    "name": "Coinstore",
+    "trade_volume_24h_btc": 9308.909342720257,
+    "converted_volume_usd_btc": 127038051
+  },
+  {
+    "name": "Paribu",
+    "trade_volume_24h_btc": 2821.439605619209,
+    "converted_volume_usd_btc": 832851
+  },
+  {
+    "name": "AscendEX (BitMax)",
+    "trade_volume_24h_btc": 9241.685769211637,
+    "converted_volume_usd_btc": 5861899
+  },
+  {
+    "name": "Poloniex",
+    "trade_volume_24h_btc": 2435.475594987707,
+    "converted_volume_usd_btc": 1292070
+  },
+  {
+    "name": "Bitstamp",
+    "trade_volume_24h_btc": 6472.402989353737,
+    "converted_volume_usd_btc": 72997334
+  },
+  {
+    "name": "Dex-Trade",
+    "trade_volume_24h_btc": 2309.623611094679,
+    "converted_volume_usd_btc": 15070641
+  },
+  {
+    "name": "bitFlyer",
+    "trade_volume_24h_btc": 1725.5934627287943,
+    "converted_volume_usd_btc": 35243454
+  },
+  {
+    "name": "BtcTurk PRO",
+    "trade_volume_24h_btc": 4710.55822765312,
+    "converted_volume_usd_btc": 1863408
+  },
+  {
+    "name": "QMall",
+    "trade_volume_24h_btc": 1669.939441087478,
+    "converted_volume_usd_btc": 20782912
+  },
+  {
+    "name": "Cryptology",
+    "trade_volume_24h_btc": 1308.4047888681891,
+    "converted_volume_usd_btc": 5974109
+  },
+  {
+    "name": "Luno",
+    "trade_volume_24h_btc": 374.04355030898614,
+    "converted_volume_usd_btc": 141148
+  },
+  {
+    "name": "Kanga",
+    "trade_volume_24h_btc": 371.1044448420363,
+    "converted_volume_usd_btc": 592224
   },
   {
     "name": "Independent Reserve",
-    "trade_volume_24h_btc": 903.2013340429423,
-    "converted_volume_usd_btc": 4599745
+    "trade_volume_24h_btc": 356.3847606929605,
+    "converted_volume_usd_btc": 1755574
   },
   {
-    "name": "Kyberswap Elastic (Arbitrum)",
-    "trade_volume_24h_btc": 475.17891355815215,
-    "converted_volume_usd_btc": 1928531
+    "name": "VALR",
+    "trade_volume_24h_btc": 264.1475393438806,
+    "converted_volume_usd_btc": 450776
   },
   {
-    "name": "Osmosis",
-    "trade_volume_24h_btc": 402.98839171801785,
-    "converted_volume_usd_btc": 2808366
+    "name": "BTCMarkets",
+    "trade_volume_24h_btc": 140.36231531209054,
+    "converted_volume_usd_btc": 1026758
   },
   {
-    "name": "KLAYSwap",
-    "trade_volume_24h_btc": 349.6166125449517,
-    "converted_volume_usd_btc": 3170523
+    "name": "CEX.IO",
+    "trade_volume_24h_btc": 124.93922436783927,
+    "converted_volume_usd_btc": 123915
   },
   {
-    "name": "Camelot",
-    "trade_volume_24h_btc": 313.2421960047111,
-    "converted_volume_usd_btc": 2127885
+    "name": "Korbit",
+    "trade_volume_24h_btc": 95.45767343899533,
+    "converted_volume_usd_btc": 1225940
   },
   {
-    "name": "Thena",
-    "trade_volume_24h_btc": 304.6180783912815,
-    "converted_volume_usd_btc": 1242681
-  },
-  {
-    "name": "GMO Japan",
-    "trade_volume_24h_btc": 305.1870374399082,
-    "converted_volume_usd_btc": 1550131
-  },
-  {
-    "name": "Kyberswap Elastic (Optimism)",
-    "trade_volume_24h_btc": 289.4517086915088,
-    "converted_volume_usd_btc": 1407539
-  },
-  {
-    "name": "Solidly (Ethereum)",
-    "trade_volume_24h_btc": 281.7138609685852,
-    "converted_volume_usd_btc": 4491140
-  },
-  {
-    "name": "Kyberswap Elastic (Avalanche)",
-    "trade_volume_24h_btc": 276.4823203915215,
-    "converted_volume_usd_btc": 70215
-  },
-  {
-    "name": "Nominex",
-    "trade_volume_24h_btc": 1118.8763533367767,
-    "converted_volume_usd_btc": 1100127
-  },
-  {
-    "name": "Trader Joe v2 (Arbitrum)",
-    "trade_volume_24h_btc": 252.13045378848872,
-    "converted_volume_usd_btc": 265933
-  },
-  {
-    "name": "Bitci",
-    "trade_volume_24h_btc": 660.7454555184509,
-    "converted_volume_usd_btc": 1258816
-  },
-  {
-    "name": "Kyberswap Elastic (Polygon)",
-    "trade_volume_24h_btc": 201.998560506026,
-    "converted_volume_usd_btc": 20651
-  },
-  {
-    "name": "Dodo (Polygon)",
-    "trade_volume_24h_btc": 257.5979110566496,
-    "converted_volume_usd_btc": 3488709
-  },
-  {
-    "name": "BitoPro",
-    "trade_volume_24h_btc": 166.64796834436842,
-    "converted_volume_usd_btc": 2228878
+    "name": "C-Patex",
+    "trade_volume_24h_btc": 75.87469992271585,
+    "converted_volume_usd_btc": 1355039
   },
   {
     "name": "Bitpanda Pro",
-    "trade_volume_24h_btc": 135.15039762309317,
-    "converted_volume_usd_btc": 1957455
+    "trade_volume_24h_btc": 41.47008302565631,
+    "converted_volume_usd_btc": 143527
+  },
+  {
+    "name": "BitMEX",
+    "trade_volume_24h_btc": 24.76382450430683,
+    "converted_volume_usd_btc": 19197.73
+  },
+  {
+    "name": "Coinmetro",
+    "trade_volume_24h_btc": 18.536591744218345,
+    "converted_volume_usd_btc": 158186
+  },
+  {
+    "name": "Delta Exchange",
+    "trade_volume_24h_btc": 15.842748239878228,
+    "converted_volume_usd_btc": 127709
+  },
+  {
+    "name": "Kuna Exchange",
+    "trade_volume_24h_btc": 12.784449202154525,
+    "converted_volume_usd_btc": 76672
+  },
+  {
+    "name": "Bitforex",
+    "trade_volume_24h_btc": 56476.817490126065,
+    "converted_volume_usd_btc": 27909808
+  },
+  {
+    "name": "CoinTR Pro",
+    "trade_volume_24h_btc": 11547.206603828108,
+    "converted_volume_usd_btc": 1331414
+  },
+  {
+    "name": "P2B",
+    "trade_volume_24h_btc": 18227.345386793364,
+    "converted_volume_usd_btc": 208440724
+  },
+  {
+    "name": "Uniswap V3 (Arbitrum One)",
+    "trade_volume_24h_btc": 7438.823097884125,
+    "converted_volume_usd_btc": 90334436
+  },
+  {
+    "name": "Uniswap V2 (Ethereum)",
+    "trade_volume_24h_btc": 4654.686682093462,
+    "converted_volume_usd_btc": 421488
+  },
+  {
+    "name": "PancakeSwap (v2)",
+    "trade_volume_24h_btc": 4114.458100218666,
+    "converted_volume_usd_btc": 321998
+  },
+  {
+    "name": "DIFX",
+    "trade_volume_24h_btc": 6523.755286854731,
+    "converted_volume_usd_btc": 156519019
+  },
+  {
+    "name": "Pancakeswap V3 (BSC)",
+    "trade_volume_24h_btc": 3222.3172728108552,
+    "converted_volume_usd_btc": 21119418
+  },
+  {
+    "name": "Uniswap V3 (Polygon)",
+    "trade_volume_24h_btc": 1633.506673601025,
+    "converted_volume_usd_btc": 14536666
+  },
+  {
+    "name": "CoinDCX",
+    "trade_volume_24h_btc": 100883.20767547013,
+    "converted_volume_usd_btc": 110328299
+  },
+  {
+    "name": "Bitvavo",
+    "trade_volume_24h_btc": 1255.0092213511246,
+    "converted_volume_usd_btc": 1769774
+  },
+  {
+    "name": "FMFW.io",
+    "trade_volume_24h_btc": 16404.791808702666,
+    "converted_volume_usd_btc": 2755114
+  },
+  {
+    "name": "PointPay",
+    "trade_volume_24h_btc": 1482.2442974670728,
+    "converted_volume_usd_btc": 1766806
+  },
+  {
+    "name": "GMO Japan",
+    "trade_volume_24h_btc": 606.6106239736606,
+    "converted_volume_usd_btc": 5509501
+  },
+  {
+    "name": "Orca",
+    "trade_volume_24h_btc": 558.6902956028488,
+    "converted_volume_usd_btc": 4330585
+  },
+  {
+    "name": "Velodrome Finance",
+    "trade_volume_24h_btc": 470.7087391577827,
+    "converted_volume_usd_btc": 453651
+  },
+  {
+    "name": "SyncSwap",
+    "trade_volume_24h_btc": 339.00409771671843,
+    "converted_volume_usd_btc": 8499643
+  },
+  {
+    "name": "Dodo (BSC)",
+    "trade_volume_24h_btc": 287.32176096412326,
+    "converted_volume_usd_btc": 1543772
+  },
+  {
+    "name": "Bitazza",
+    "trade_volume_24h_btc": 225.99544139001043,
+    "converted_volume_usd_btc": 86259
+  },
+  {
+    "name": "Bilaxy",
+    "trade_volume_24h_btc": 1249.9201208676197,
+    "converted_volume_usd_btc": 28336
+  },
+  {
+    "name": "Camelot",
+    "trade_volume_24h_btc": 178.5860670055504,
+    "converted_volume_usd_btc": 482651
+  },
+  {
+    "name": "BitoPro",
+    "trade_volume_24h_btc": 557.5206678124165,
+    "converted_volume_usd_btc": 419261
+  },
+  {
+    "name": "Nominex",
+    "trade_volume_24h_btc": 471.6762671308787,
+    "converted_volume_usd_btc": 1832444
+  },
+  {
+    "name": "Canto Dex",
+    "trade_volume_24h_btc": 150.71086592612534,
+    "converted_volume_usd_btc": 1245965
+  },
+  {
+    "name": "Osmosis",
+    "trade_volume_24h_btc": 148.22942346862058,
+    "converted_volume_usd_btc": 849828
+  },
+  {
+    "name": "Katana",
+    "trade_volume_24h_btc": 82.02689103307856,
+    "converted_volume_usd_btc": 431133
+  },
+  {
+    "name": "Pancakeswap (Stableswap)",
+    "trade_volume_24h_btc": 81.18749120303109,
+    "converted_volume_usd_btc": 617010
+  },
+  {
+    "name": "Trader Joe v2",
+    "trade_volume_24h_btc": 75.65775656036617,
+    "converted_volume_usd_btc": 251377
+  },
+  {
+    "name": "CoinJar Exchange",
+    "trade_volume_24h_btc": 53.787486504413984,
+    "converted_volume_usd_btc": 71336
+  },
+  {
+    "name": "WazirX",
+    "trade_volume_24h_btc": 51.65656450490678,
+    "converted_volume_usd_btc": 319129
+  },
+  {
+    "name": "LCX Exchange",
+    "trade_volume_24h_btc": 37.263050282841355,
+    "converted_volume_usd_btc": 279977
+  },
+  {
+    "name": "Bitlo",
+    "trade_volume_24h_btc": 32.266050652561276,
+    "converted_volume_usd_btc": 73442
   }
 ]
